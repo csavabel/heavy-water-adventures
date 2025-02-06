@@ -1,11 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
-    // Select forms
     const bookingForm = document.getElementById("reservationForm");
     const contactForm = document.getElementById("contactForm");
 
-    /**
-     * Helper function to show error messages
-     */
     function showError(input, message) {
         const errorElement = document.createElement("div");
         errorElement.className = "invalid-feedback";
@@ -14,17 +10,11 @@ document.addEventListener("DOMContentLoaded", function () {
         input.parentNode.appendChild(errorElement);
     }
 
-    /**
-     * Remove previous error messages
-     */
     function clearErrors(form) {
         form.querySelectorAll(".invalid-feedback").forEach(el => el.remove());
         form.querySelectorAll(".is-invalid").forEach(el => el.classList.remove("is-invalid"));
     }
 
-    /**
-     * Validate booking form
-     */
     function validateBookingForm() {
         clearErrors(bookingForm);
         let isValid = true;
@@ -79,9 +69,6 @@ document.addEventListener("DOMContentLoaded", function () {
         return isValid;
     }
 
-    /**
-     * Validate contact form
-     */
     function validateContactForm() {
         clearErrors(contactForm);
         let isValid = true;
@@ -109,9 +96,6 @@ document.addEventListener("DOMContentLoaded", function () {
         return isValid;
     }
 
-    /**
-     * Handle booking form submission
-     */
     bookingForm.addEventListener("submit", function (event) {
         event.preventDefault();
         if (validateBookingForm()) {
@@ -120,9 +104,6 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 
-    /**
-     * Handle contact form submission
-     */
     contactForm.addEventListener("submit", function (event) {
         event.preventDefault();
         if (validateContactForm()) {

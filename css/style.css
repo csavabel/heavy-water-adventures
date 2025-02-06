@@ -1,6 +1,3 @@
-/* ==============================
-   GLOBAL STYLES
-   ============================== */
 * {
     margin: 0;
     padding: 0;
@@ -15,9 +12,7 @@ html {
     background-color: #f2eeeea7;
 }
 
-/* ==============================
-   MAIN CONTAINER
-   ============================== */
+/* MAIN CONTAINER */
 
 .main-container {
     display: flex;
@@ -25,9 +20,7 @@ html {
     min-height: 100vh;
 }
 
-/* ==============================
-   NAVIGATION (HEADER)
-   ============================== */
+/* NAVIGATION (HEADER) */
 
 #mainNav {
     position: fixed;
@@ -137,15 +130,13 @@ html {
     }
 }
 
-/* ==============================
-   HEADER - HERO SLIDER
-   ============================== */
+/* HEADER - HERO SLIDER */
 
 header {
     margin-top: 80px;
     position: relative;
     width: 100%;
-    height: 66vh;
+    height: 85vh;
 }
 
 #heroSlider {
@@ -154,10 +145,9 @@ header {
 
 .carousel-item img {
     object-fit: cover;
-    height: 66vh;
+    height: 85vh;
 }
 
-/* text box */
 .carousel-caption {
     background: rgba(0, 0, 0, 0.6); 
     display: flex; 
@@ -196,8 +186,16 @@ header {
 
 @media (max-width: 768px) {
     .carousel-caption {
-        max-width: 80%;
-        padding: 2vw 4vw;
+        background: rgba(255, 255, 255, 0); 
+    }
+    .carousel-caption h1 {
+        color: #ffffff; 
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); 
+    }
+
+    .carousel-caption p {
+        color: #ffffff; 
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4); 
     }
 }
 
@@ -227,12 +225,13 @@ header {
 
 .carousel-control-prev,
 .carousel-control-next {
-    width: 5%;
+    width: 8%;
+    height: 100%;
 }
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.8);
     border-radius: 50%;
     padding: 10px;
     transition: background-color 0.3s ease-in-out;
@@ -240,12 +239,12 @@ header {
 
 .carousel-control-prev-icon:hover,
 .carousel-control-next-icon:hover {
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.8);
 }
 
 .carousel-indicators button {
-    width: 12px;
-    height: 12px;
+    width: 18px;
+    height: 18px;
     border-radius: 50%;
     background-color: white;
     border: none;
@@ -259,50 +258,164 @@ header {
     background-color: #f8b400;
 }
 
-/* ==============================
-   MAIN SECTION (Lodges, Contact)
-   ============================== */
+/* MAIN SECTION (Lodges, Contact) */
 
 .main-content {
     flex: 1;
 }
 
-/* ==============================
-   LODGES SECTION
-   ============================== */
+/* LODGES SECTION */
 
 #lodges {
     background-color: #222;
     color: white;
-    padding: 50px 0;
+    padding: 60px 0;
 }
 
 .lodge-container {
     display: flex;
     justify-content: center;
-    gap: 30px;
+    gap: 40px;
     flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .lodge-box {
     background: rgba(255, 255, 255, 0.1);
-    padding: 20px;
-    border-radius: 10px;
+    padding: 30px;
+    border-radius: 12px;
     text-align: center;
-    transition: transform 0.3s ease-in-out;
-    width: 48%;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    width: 100%;
+    max-width: 500px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
 }
 
 .lodge-box:hover {
-    transform: scale(1.03);
+    transform: scale(1.05);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.5);
 }
 
 .lodge-content {
     text-align: center;
     margin-bottom: 20px;
+}
+
+.lodge-box ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.lodge-box ul li {
+    font-size: 1.2rem;
+    padding: 8px 0;
+    color: #ddd;
+    text-align: left;
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Lodges Section Styling */
+
+#lodges h3 {
+    font-size: 2.4rem;
+    font-weight: bold;
+    text-align: center;
+    color: #f8b400;
+    margin-bottom: 20px;
+}
+
+#lodges p {
+    font-size: 1.2rem;
+    line-height: 1.5; 
+    color: #ccc;
+    text-align: justify;
+    text-align: left; 
+    margin-bottom: 10px; 
+}
+
+#lodges h4 {
+    font-size: 2rem;
+    text-align: left;
+    font-weight: bold;
+    margin-top: 15px;
+    color: #f8b400;
+}
+
+#lodges .btn-outline-light {
+    background-color: #f8b400;
+    border: none;
+    font-size: 1.2rem;
+    padding: 12px 20px;
+    border-radius: 8px;
+    transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+    color: #222;
+    text-decoration: none;
+    display: inline-block;
+}
+
+#lodges .btn-outline-light:hover {
+    background-color: #e0a200;
+    color: #222;
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+
+@media (max-width: 1024px) {
+    .lodge-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .lodge-box {
+        width: 90%;
+    }
+}
+
+@media (max-width: 768px) {
+    #lodges h3 {
+        font-size: 2rem;
+    }
+
+    #lodges p {
+        font-size: 1.1rem;
+    }
+
+    #lodges h4 {
+        font-size: 1.8rem;
+    }
+
+    .lodge-box {
+        padding: 20px;
+    }
+
+    .lodge-box ul li {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    #lodges h3 {
+        font-size: 1.8rem;
+    }
+
+    #lodges p {
+        font-size: 1rem;
+    }
+
+    #lodges h4 {
+        font-size: 1.6rem;
+    }
+
+    .lodge-box {
+        width: 95%;
+    }
 }
 
 .lodge-gallery {
@@ -337,6 +450,8 @@ header {
     opacity: 0.8;
     transform: scale(1.05);
 }
+
+/* Gallery modal */
 
 #imageModal {
     display: none;
@@ -400,9 +515,38 @@ header {
     color: #f8b400;
 }
 
-/* ==============================
-   ABOUT MODAL - FULLSCREEN DESIGN (Javított Pozíció)
-   ============================== */
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 768px) {
+    #imageModal img {
+        max-width: 95%;
+        max-height: 70vh;
+    }
+
+    #modalPrev,
+    #modalNext {
+        font-size: 1.8rem;
+        width: 45px;
+        height: 45px;
+    }
+}
+
+@media (max-width: 480px) {
+    #imageModal img {
+        max-width: 100%;
+        max-height: 60vh;
+    }
+
+    #modalPrev,
+    #modalNext {
+        font-size: 1.6rem;
+        width: 40px;
+        height: 40px;
+    }
+}
+
+
+/* ABOUT MODAL - FULLSCREEN DESIGN */
 
    .modal {
     display: none; 
@@ -518,9 +662,7 @@ header {
     }
 }
 
-/* ==============================
-   MAPS SECTION - LODGES LOCATION
-   ============================== */
+/* MAPS SECTION - LODGES LOCATION */
 
    #maps {
     background: #222;
@@ -574,9 +716,7 @@ header {
     }
 }
 
-/* ==============================
-   CONTACT SECTION
-   ============================== */
+/* CONTACT SECTION */
 
 #contact {
     background: #222;
@@ -592,7 +732,6 @@ header {
     font-weight: bold;
 }
 
-/* Contact Info */
 .contact-info p {
     font-size: 1.2rem;
     margin-bottom: 10px;
@@ -608,10 +747,6 @@ header {
 .contact-info a:hover {
     color: #fff;
 }
-
-/* ==============================
-   HOST INFORMATION (PETI)
-   ============================== */
 
 .host-info {
     margin-top: 40px;
@@ -635,7 +770,6 @@ header {
     margin: 0 auto;
 }
 
-/* Host Image */
 .host-photo {
     width: 200px;
     height: 200px;
@@ -649,16 +783,11 @@ header {
     transform: scale(1.1);
 }
 
-/* Host Text */
 .host-content p {
     font-size: 1.2rem;
     line-height: 1.6;
     max-width: 500px;
 }
-
-/* ==============================
-   SOCIAL MEDIA ICONS
-   ============================== */
 
 .social-links {
     margin-top: 30px;
@@ -670,7 +799,6 @@ header {
     text-transform: uppercase;
 }
 
-/* Ikonok stílusa */
 .social-icon {
     font-size: 2rem;
     color: white;
@@ -682,10 +810,7 @@ header {
     color: #f8b400;
 }
 
-
-/* ==============================
-   FOOTER SECTION
-   ============================== */
+/* FOOTER SECTION */
 
 footer {
     background-color: #222;
@@ -693,14 +818,9 @@ footer {
     text-align: center;
     padding: 15px 0;
     margin-top: auto;
+    margin-bottom: 50px;
 }
 
-/* ==============================
-  Responsive Design
-   ============================== */
-
-
-/* hero */
 @media (max-width: 768px) {
     header {
         height: 50vh;
@@ -723,8 +843,6 @@ footer {
     }
 }
 
-/* lodge */
-
 @media (max-width: 992px) {
     .lodge-container {
         flex-direction: column;
@@ -740,7 +858,6 @@ footer {
     }
 }
 
-/* contact */
 @media (max-width: 768px) {
     .host-content {
         flex-direction: column;
@@ -753,9 +870,7 @@ footer {
     }
 }
 
-/* ==============================
-   BACK TO TOP BUTTON
-   ============================== */
+/* BACK TO TOP BUTTON */
 
    .back-to-top {
     position: fixed;
@@ -784,9 +899,7 @@ footer {
     visibility: visible;
 }
 
-/* ==============================
-   COOKIE BANNER
-   ============================== */
+/* COOKIE BANNER */
 
 .cookie-banner {
     position: fixed;
@@ -837,9 +950,7 @@ footer {
     display: none;
 }
 
-/* ==============================
-   BOOKING BUTTON (LEFT BOTTOM)
-   ============================== */
+/* Booking button */
 
    .booking-button {
     position: fixed;
@@ -876,11 +987,9 @@ footer {
     }
 }
 
-/* ==============================
-   ABOUT PAGE 
-   ============================== */
+/* ABOUT PAGE  */
 
-   #about-page {
+#about-page {
     max-width: 1200px;
     margin: auto;
     color: #fff; 
@@ -894,7 +1003,6 @@ footer {
     box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.3);
 }
 
-/* Egységes címsorok */
 #about-page h2, #about-page h3, #about-page h4 {
     font-size: 2.8rem;
     font-weight: bold;
@@ -912,7 +1020,6 @@ footer {
     text-align: left;
 }
 
-/* Bekezdések */
 #about-page p {
     font-size: 1.2rem;
     line-height: 1.8;
@@ -920,7 +1027,6 @@ footer {
     text-align: justify;
 }
 
-/* Gombok (More Info linkek) */
 #about-page .btn-primary, 
 #about-page .btn-outline-primary {
     background-color: #f8b400;
@@ -947,7 +1053,6 @@ footer {
     transform: scale(1.05);
 }
 
-/* Képek */
 #about-page img {
     width: 100%;
     max-height: 350px;
@@ -962,7 +1067,6 @@ footer {
     transform: scale(1.03);
 }
 
-/* Szekciók elrendezése */
 #about-page .row {
     display: flex;
     align-items: center;
@@ -1000,9 +1104,7 @@ footer {
     }
 }
 
-/* ==============================
-   MODAL DESIGN - ABOUT PAGE
-   ============================== */
+   /* MODAL DESIGN - ABOUT PAGE */
 
    #about-page .modal {
     z-index: 1060 !important; 
@@ -1114,17 +1216,13 @@ footer {
     }
 }
 
-/* ==============================
-   Booking Page
-   ============================== */
+/* Booking Page */
 
-/* Ensure content is below the navbar */
 #stay-with-us-page {
-    margin-top: 80px; /* Adjust this value based on your navbar height */
+    margin-top: 80px;
     padding: 40px 0;
 }
 
-/* General Styles */
 #stay-with-us-page .container {
     max-width: 900px;
 }
@@ -1136,7 +1234,6 @@ footer {
     font-weight: 600;
 }
 
-/* Forms */
 #stay-with-us-page form {
     background: #f8f9fa;
     padding: 20px;
@@ -1168,7 +1265,6 @@ footer {
     box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
 }
 
-/* Buttons */
 #stay-with-us-page .btn {
     padding: 10px;
     font-size: 1rem;
@@ -1196,7 +1292,6 @@ footer {
     background-color: #545b62;
 }
 
-/* Spacing */
 #stay-with-us-page .mb-3 {
     margin-bottom: 20px;
 }
@@ -1205,10 +1300,9 @@ footer {
     margin-top: 30px;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
     #stay-with-us-page {
-        margin-top: 60px; /* Adjust for smaller navbar */
+        margin-top: 60px; 
     }
 
     #stay-with-us-page form {
