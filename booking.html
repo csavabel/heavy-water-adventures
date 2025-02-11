@@ -2,56 +2,52 @@
 <html lang="en">
 
 <head>
-    <!-- Google Indexelés Tiltása (Éles verziónál vedd ki!) -->
+    <!-- ⚠️ REMOVE THIS BEFORE GOING LIVE: Prevents Google from indexing the site -->
     <meta name="robots" content="noindex, nofollow">
 
-    <!-- Alap Meta Adatok -->
+    <!-- Essential Meta Data -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
         content="Book your stay at Heavy Water Adventures in Rjukan, Norway. Enjoy cozy accommodations and thrilling outdoor experiences.">
-    <meta name="keywords" content="Rjukan, Norway, Heavy Water Adventures, booking, accommodation, adventure, stay">
+    <meta name="keywords"
+        content="Rjukan, Norway, Heavy Water Adventures, booking, accommodation, adventure, stay, travel, lodging">
     <meta name="author" content="Heavy Water Adventures">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="language" content="en">
 
-    <!-- Canonical URL (Ha van végleges URL, ezt állítsd be helyesen) -->
+    <!-- Canonical URL -->
     <link rel="canonical" href="https://heavywateradventures.com/stay-with-us.html">
 
-    <!-- Favicon -->
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-
-<meta property="og:title" content="Heavy Water Adventures">
-<meta property="og:site_name" content="Heavy Water Adventures">
-<meta property="og:url" content="http://heavywateradventures.com">
-<meta property="og:type" content="website">
-<meta property="og:image" content="http://heavywateradventures.com/img/logo.png">
-<meta property="og:description" content="Stay in our cozy Scandinavian-style lodges in Rjukan. Perfect for climbing, skiing, and adventure!">
-
-
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
+    <!-- Open Graph (Facebook & LinkedIn) -->
     <meta property="og:title" content="Stay With Us - Heavy Water Adventures">
     <meta property="og:description"
         content="Plan your perfect stay at Heavy Water Adventures! Book now and explore the beauty of Rjukan, Norway.">
     <meta property="og:image" content="https://heavywateradventures.com/img/booking-preview.jpg">
     <meta property="og:url" content="https://heavywateradventures.com/stay-with-us.html">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Heavy Water Adventures">
 
-    <!-- Twitter Meta Data -->
+    <!-- Twitter Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Stay With Us - Heavy Water Adventures">
     <meta name="twitter:description"
-        content="Plan your perfect stay at Heavy Water Adventures! Book now and explore the beauty of Rjukan, Norway.">
+        content="Book your stay at Heavy Water Adventures in Rjukan. Cozy accommodations and thrilling adventures await.">
     <meta name="twitter:image" content="https://heavywateradventures.com/img/booking-preview.jpg">
 
-    <!-- Oldal Címe -->
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+
+    <!-- Page Title -->
     <title>Stay With Us | Heavy Water Adventures</title>
 
     <!-- Bootstrap CSS -->
-    <link rel="preload" as="style"
-        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preload" as="style" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
     <link rel="preload" as="style" href="css/style.css">
@@ -60,8 +56,18 @@
     <!-- Bootstrap Icons -->
     <link rel="preload" as="style" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
-</head>
 
+    <!-- Google Fonts (Preloaded for Performance) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome (For Icons) -->
+    <script defer src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap JavaScript (Defer for Performance) -->
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</head>
 
 <body>
 
@@ -69,37 +75,52 @@
     <div class="main-container">
 
         <!-- Navigation -->
-        <nav id="mainNav" class="navbar navbar-expand-lg fixed-top">
+        <nav id="mainNav" class="navbar navbar-expand-lg fixed-top" role="navigation" aria-label="Main Navigation">
             <div class="container-fluid d-flex align-items-center justify-content-between">
 
                 <!-- Logo -->
-                <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <a class="navbar-brand d-flex align-items-center" href="index.html"
+                    aria-label="Heavy Water Adventures Home">
                     <img src="img/logo.webp" alt="Heavy Water Adventures Logo" class="nav-logo">
                 </a>
 
                 <!-- Mobile Toggle -->
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
                 <!-- Navigation Links -->
                 <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
                     <ul class="navbar-nav">
-                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
-                        <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
-                        <li class="nav-item"><a class="nav-link" href="booking.html">Stay With Us</a></li>
+
+                        <!-- Home -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html" aria-label="Go to Home">Home</a>
+                        </li>
+
+                        <!-- About Us -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html" aria-label="Learn more about us">About Us</a>
+                        </li>
+
+                        <!-- Gallery -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="gallery.html" aria-label="View our gallery">Gallery</a>
+                        </li>
+
+                        <!-- Stay With Us -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="booking.html" aria-label="Book your stay">Stay With Us</a>
+                        </li>
                     </ul>
                 </div>
 
                 <!-- Social Links -->
                 <div class="header-social-links d-flex">
                     <a href="https://www.facebook.com/profile.php?id=100063650139284" target="_blank"
-                        rel="noopener noreferrer" class="social-icon facebook">
+                        rel="noopener noreferrer" class="social-icon facebook" aria-label="Visit our Facebook page">
                         <i class="bi bi-facebook"></i>
-                    </a>
-                    <a href="#" class="social-icon instagram">
-                        <i class="bi bi-instagram"></i>
                     </a>
                 </div>
             </div>
@@ -107,12 +128,12 @@
 
         <main class="container py-5" id="stay-with-us-page">
             <h1 class="text-center mb-4">Book Your Stay</h1>
-        
+
             <!-- Booking Form -->
             <section id="booking-form">
                 <form id="reservationForm" class="p-4 shadow rounded">
                     <h2 class="mb-3">Reservation Details</h2>
-        
+
                     <!-- Select Lodge -->
                     <div class="mb-3">
                         <label for="lodge" class="form-label">Choose Your Lodge</label>
@@ -122,7 +143,7 @@
                             <option value="adventure-base">Adventure Base</option>
                         </select>
                     </div>
-        
+
                     <!-- Select Dates -->
                     <div class="mb-3">
                         <label for="checkin" class="form-label">Check-in Date</label>
@@ -132,13 +153,13 @@
                         <label for="checkout" class="form-label">Check-out Date</label>
                         <input type="date" class="form-control" id="checkout" name="checkout" required>
                     </div>
-        
+
                     <!-- Number of Guests -->
                     <div class="mb-3">
                         <label for="guests" class="form-label">Number of Guests</label>
                         <input type="number" class="form-control" id="guests" name="guests" min="1" max="10" required>
                     </div>
-        
+
                     <!-- Personal Information -->
                     <h2 class="mt-4 mb-3">Your Information</h2>
                     <div class="mb-3">
@@ -153,20 +174,42 @@
                         <label for="phone" class="form-label">Phone Number</label>
                         <input type="tel" class="form-control" id="phone" name="phone" required>
                     </div>
-        
+
                     <!-- Additional Requests -->
                     <div class="mb-3">
                         <label for="requests" class="form-label">Additional Requests (Optional)</label>
                         <textarea class="form-control" id="requests" name="requests" rows="3"></textarea>
                     </div>
-        
+
+                    <!-- Newsletter Subscription -->
+                    <div class="mb-3">
+                        <label class="form-label">Would you like to receive our exclusive travel updates and special
+                            offers?</label>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="newsletter" id="newsletter-yes"
+                                value="yes">
+                            <label class="form-check-label" for="newsletter-yes">Yes, sign me up for the
+                                newsletter.</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="newsletter" id="newsletter-no" value="no"
+                                checked>
+                            <label class="form-check-label" for="newsletter-no">No, I don't want to receive
+                                updates.</label>
+                        </div>
+                        <small class="text-muted d-block mt-1">
+                            You can unsubscribe anytime via the link in our emails. We respect your privacy and do not
+                            share your data.
+                        </small>
+                    </div>
+
                     <!-- Submit Button -->
                     <button type="submit" class="btn btn-primary w-100">Submit Reservation</button>
                 </form>
             </section>
-        
+
             <hr class="my-5">
-        
+
             <!-- Contact Form -->
             <section id="contact-form">
                 <h2 class="text-center mb-3">Have Questions? Contact Us!</h2>
@@ -183,74 +226,142 @@
                         <label for="message" class="form-label">Your Message</label>
                         <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
                     </div>
+
+                    <!-- Newsletter Subscription -->
+                    <div class="mb-3">
+                        <label class="form-label">Stay updated with our latest news and travel tips?</label>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="contact-newsletter"
+                                id="contact-newsletter-yes" value="yes">
+                            <label class="form-check-label" for="contact-newsletter-yes">Yes, sign me up for the
+                                newsletter.</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="contact-newsletter"
+                                id="contact-newsletter-no" value="no" checked>
+                            <label class="form-check-label" for="contact-newsletter-no">No, I don't want
+                                updates.</label>
+                        </div>
+                        <small class="text-muted d-block mt-1">
+                            You can unsubscribe at any time through our emails. Your information is safe with us.
+                        </small>
+                    </div>
+
                     <button type="submit" class="btn btn-secondary w-100">Send Message</button>
                 </form>
             </section>
         </main>
-        
 
         <!-- Footer -->
         <footer class="bg-dark text-white text-center py-4">
             <div class="container">
                 <div class="row">
-                    <!-- Contact Info -->
+                    <!-- Contact Information -->
                     <div class="col-md-4 mb-3">
                         <h5>Contact Us</h5>
-                        <p>Email: <a href="mailto:info@heavywateradventures.com"
-                                class="text-white">info@heavywateradventures.com</a></p>
-                        <p>Phone: <a href="tel:+4712345678" class="text-white">+47 123 456 78</a></p>
+                        <address>
+                            <p>Email:
+                                <a href="mailto:info@heavywateradventures.com" class="text-white"
+                                    aria-label="Send an email to Heavy Water Adventures">
+                                    info@heavywateradventures.com
+                                </a>
+                            </p>
+                            <p>Phone:
+                                <a href="tel:+4712345678" class="text-white"
+                                    aria-label="Call Heavy Water Adventures at +47 123 456 78">
+                                    +47 123 456 78
+                                </a>
+                            </p>
+                        </address>
                     </div>
 
-                    <!-- Navigation Links -->
-                    <div class="col-md-4 mb-3">
+                    <!-- Quick Links -->
+                    <nav class="col-md-4 mb-3" aria-label="Quick Navigation">
                         <h5>Quick Links</h5>
                         <ul class="list-unstyled">
                             <li><a href="index.html" class="text-white">Home</a></li>
                             <li><a href="about.html" class="text-white">About Us</a></li>
                             <li><a href="gallery.html" class="text-white">Gallery</a></li>
-                            <li><a href="booking.html" class="text-white">Stay With Us</a></li>
+                            <li><a href="booking.html" class="text-white">Book Your Stay</a></li>
                         </ul>
-                    </div>
+                    </nav>
 
-                    <!-- Social Media Links -->
+                    <!-- Social Media -->
                     <div class="col-md-4 mb-3">
                         <h5>Follow Us</h5>
                         <a href="https://www.facebook.com/profile.php?id=100063650139284" target="_blank"
-                            class="text-white me-3">
+                            rel="noopener noreferrer" class="text-white me-3"
+                            aria-label="Follow Heavy Water Adventures on Facebook">
                             <i class="bi bi-facebook" style="font-size: 1.5rem;"></i>
-                        </a>
-                        <a href="#" class="text-white">
-                            <i class="bi bi-instagram" style="font-size: 1.5rem;"></i>
                         </a>
                     </div>
                 </div>
 
                 <hr class="bg-light">
 
-                <p class="mb-0">&copy; 2025 Heavy Water Adventures | <a href="privacy.html" class="text-white" target="_blank">Privacy
-                        Policy</a></p>
+                <p class="mb-0">&copy; 2025 Heavy Water Adventures |
+                    <a href="privacy.html" class="text-white" target="_blank" aria-label="Read our Privacy Policy">
+                        Privacy Policy
+                    </a>
+                </p>
+
+                <!-- Manage Cookies Button -->
+                <button id="modifyCookies" class="btn btn-warning mt-3">Manage Cookie Settings</button>
             </div>
         </footer>
 
+    </div> <!-- End main-container -->
 
+    <!-- BACK TO TOP BUTTON -->
+    <button id="backToTop" class="back-to-top" onclick="scrollToTop()" aria-label="Scroll back to top">&#8679;</button>
+
+    <!-- COOKIE BANNER -->
+    <div id="cookieBanner" class="cookie-banner">
+        <p>This website uses cookies to enhance your experience. You can choose which cookies to allow.</p>
+        <button id="acceptAllCookies">Accept All</button>
+        <button id="rejectCookies">Reject Non-Essential</button>
+        <button id="customizeCookies">Customize</button>
     </div>
 
-   <!-- BACK TO TOP BUTTON -->
-<button id="backToTop" class="back-to-top" onclick="scrollToTop()">&#8679;</button>
+    <!-- COOKIE SETTINGS MODAL -->
+    <div id="cookieModal" class="cookie-modal hidden" role="dialog" aria-labelledby="cookieModalTitle">
+        <button id="closeCookieModal" class="close-modal" aria-label="Close cookie settings">&times;</button>
+        <h2 id="cookieModalTitle">Cookie Preferences</h2>
+        <p>Select which types of cookies you accept:</p>
+        <label>
+            <input type="checkbox" id="necessaryCookies" disabled checked> Necessary (always enabled)
+        </label>
+        <label>
+            <input type="checkbox" id="analyticsCookies"> Analytics
+        </label>
+        <label>
+            <input type="checkbox" id="marketingCookies"> Marketing
+        </label>
+        <br>
+        <button id="saveCookiePreferences">Save Preferences</button>
+    </div>
 
-<!-- COOKIE BANNER -->
-<div id="cookieBanner" class="cookie-banner">
-    <p>This website uses cookies to ensure you get the best experience. <a href="#">Learn more</a></p>
-    <button id="acceptCookiesBtn">Accept</button>
-</div>
+    <!-- QUESTION BUTTON -->
+    <a href="booking.html#contact-form" id="questionButton" class="question-button"
+        aria-label="Ask a question about booking">
+        <i class="bi bi-chat-dots"></i>
+    </a>
+
+    <!-- BOOKING BUTTON -->
+    <a href="booking.html" id="bookingButton" class="booking-button" aria-label="Proceed to booking page">
+        <i class="bi bi-calendar-check"></i>
+    </a>
+
 
     <!-- Bootstrap JS (necessary for the navbar toggle) -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
 
-    <script src="script/index_extra.js"></script>
+
     <script src="script/nav.js"></script>
     <script src="script/booking.js"></script>
+    <script src="script/back-to-up-button.js"></script>
+    <script src="script/cookie-banner.js"></script>
 
 </body>
 

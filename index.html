@@ -2,57 +2,59 @@
 <html lang="en">
 
 <head>
-    <title>Heavy Water Adventures</title>
+    <title>Heavy Water Adventures - Cozy Lodges in Rjukan, Norway</title>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- SEO Optimalizált Meta Tagok -->
+    <!-- SEO Optimized Meta Tags -->
     <meta name="description"
-        content="Heavy Water Adventures - Cozy lodge in Rjukan, Norway. Perfect for groups and solo travelers. Fully equipped lodges with modern amenities and breathtaking nature views.">
+        content="Stay at Heavy Water Adventures in Rjukan, Norway. Fully equipped Scandinavian-style lodges, perfect for skiing, climbing, and adventure. Book your stay today!">
     <meta name="keywords"
-        content="Rjukan, Norway, accommodation, ski lodge, climbing, adventure, Heavy Water Lodge, Adventure Base, winter sports, hiking">
+        content="Rjukan, Norway, accommodation, ski lodge, climbing, adventure, Heavy Water Lodge, Adventure Base, winter sports, hiking, cozy lodges">
     <meta name="author" content="Heavy Water Adventures">
 
-    <meta property="og:title" content="Heavy Water Adventures">
-    <meta property="og:site_name" content="Heavy Water Adventures">
-    <meta property="og:url" content="http://heavywateradventures.com">
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="http://heavywateradventures.com/img/logo.png">
-    <meta property="og:description" content="Stay in our cozy Scandinavian-style lodges in Rjukan. Perfect for climbing, skiing, and adventure!">
-    
-
-    <!-- Google Indexelés Tiltása (Ezt vedd ki, ha már éles az oldal) -->
+    <!-- ⚠️ REMOVE THIS BEFORE GOING LIVE: Prevents Google from indexing the site -->
     <meta name="robots" content="noindex, nofollow">
 
-    <!-- Open Graph / Facebook Meta Tagok -->
-    <meta property="og:title" content="Heavy Water Adventures - Cozy Lodge in Rjukan">
+    <!-- Open Graph (Facebook & Social Sharing) -->
+    <meta property="og:title" content="Heavy Water Adventures - Stay in Rjukan, Norway">
     <meta property="og:description"
-        content="Stay at Heavy Water Lodge or Adventure Base. Enjoy Norwegian nature, winter sports, and adventure activities.">
+        content="Experience adventure in Rjukan with a stay at our Scandinavian-style lodges. Perfect for skiing, climbing, and exploring Norwegian nature.">
     <meta property="og:image" content="https://heavywateradventures.com/img/preview.jpg">
     <meta property="og:url" content="https://heavywateradventures.com">
     <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Heavy Water Adventures">
 
-    <!-- Twitter Card Meta Tagok -->
+    <!-- Twitter Card (For Twitter Sharing) -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Heavy Water Adventures - Stay in Rjukan">
+    <meta name="twitter:title" content="Heavy Water Adventures - Cozy Lodges in Rjukan">
     <meta name="twitter:description"
-        content="Scandinavian-style lodges in Rjukan, Norway. Perfect for adventure seekers and relaxation.">
+        content="Book your stay at Heavy Water Adventures in Rjukan. Fully equipped lodges for adventure lovers.">
     <meta name="twitter:image" content="https://heavywateradventures.com/img/preview.jpg">
+    <meta name="twitter:site" content="@YourTwitterHandle"> <!-- Replace with your Twitter handle if available -->
 
-    <!-- Favicon -->
+    <!-- Favicon (Ensure proper format for different devices) -->
     <link rel="icon" href="favicon.ico" type="image/x-icon">
-<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
 
-
-    <!-- Bootstrap és Ikonok -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <!-- Stylesheets -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-
-    <!-- Saját CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
     <link rel="stylesheet" href="css/style.css">
-</head>
 
+    <!-- Preload Key Resources for Better Performance -->
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" as="style">
+    <link rel="preload" href="css/style.css" as="style">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Defer Non-Essential Scripts for Faster Loading -->
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</head>
 
 <body>
 
@@ -60,109 +62,139 @@
     <div class="main-container">
 
         <!-- Navigation -->
-        <nav id="mainNav" class="navbar navbar-expand-lg fixed-top">
+        <nav id="mainNav" class="navbar navbar-expand-lg fixed-top" role="navigation" aria-label="Main Navigation">
             <div class="container-fluid d-flex align-items-center justify-content-between">
 
                 <!-- Logo -->
-                <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <a class="navbar-brand d-flex align-items-center" href="index.html"
+                    aria-label="Heavy Water Adventures Home">
                     <img src="img/logo.webp" alt="Heavy Water Adventures Logo" class="nav-logo">
                 </a>
 
                 <!-- Mobile Toggle -->
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
                 <!-- Navigation Links -->
                 <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
                     <ul class="navbar-nav">
-                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
-                        <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
-                        <li class="nav-item"><a class="nav-link" href="booking.html">Stay With Us</a></li>
+
+                        <!-- Home -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html" aria-label="Go to Home">Home</a>
+                        </li>
+
+                        <!-- About Us -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html" aria-label="Learn more about us">About Us</a>
+                        </li>
+
+                        <!-- Gallery -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="gallery.html" aria-label="View our gallery">Gallery</a>
+                        </li>
+
+                        <!-- Stay With Us -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="booking.html" aria-label="Book your stay">Stay With Us</a>
+                        </li>
                     </ul>
                 </div>
 
                 <!-- Social Links -->
                 <div class="header-social-links d-flex">
                     <a href="https://www.facebook.com/profile.php?id=100063650139284" target="_blank"
-                        rel="noopener noreferrer" class="social-icon facebook">
+                        rel="noopener noreferrer" class="social-icon facebook" aria-label="Visit our Facebook page">
                         <i class="bi bi-facebook"></i>
                     </a>
-                    <a href="#" class="social-icon instagram">
-                        <i class="bi bi-instagram"></i>
-                    </a>
                 </div>
+            </div>
         </nav>
 
-        <!-- Header section -->
-
+        <!-- Header Section -->
         <header>
-            <div id="heroSlider" class="carousel slide" data-bs-interval="false">
+            <div id="heroSlider" class="carousel slide" data-bs-interval="false" aria-label="Main Feature Slider">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="img/cover1.webp" class="d-block w-100" alt="Stunning View of Rjukan Valley">
+                        <img src="img/cover1.webp" class="d-block w-100"
+                            alt="Panoramic view of Rjukan Valley, Norway at sunrise">
                         <div class="carousel-caption animate-text">
                             <h1>Discover Rjukan</h1>
-                            <p>Unforgettable adventures in Norway’s breathtaking wilderness</p>
+                            <p>Unforgettable adventures in Norway's breathtaking wilderness.</p>
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img src="img/cover2.webp" class="d-block w-100" alt="Cozy Cabins in the Snow">
+                        <img src="img/cover2.webp" class="d-block w-100" alt="Snow-covered cabins in Rjukan, Norway"
+                            loading="lazy">
                         <div class="carousel-caption animate-text">
-                            <h1>Your Home in the Wild</h1>
-                            <p>Stay at Adventure Base or Heavy Water Lodge</p>
+                            <h2>Your Home in the Wild</h2>
+                            <p>Stay at Adventure Base or Heavy Water Lodge.</p>
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img src="img/liptonhouse.webp" class="d-block w-100" alt="Traditional Norwegian Cabin">
+                        <img src="img/liptonhouse.webp" class="d-block w-100"
+                            alt="Traditional Norwegian cabin with wooden facade" loading="lazy">
                         <div class="carousel-caption animate-text">
-                            <h1>Escape to Nature</h1>
-                            <p>Perfect getaway for climbers, hikers, and explorers</p>
+                            <h2>Escape to Nature</h2>
+                            <p>Perfect getaway for climbers, hikers, and explorers.</p>
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img src="img/liptonroom.webp" class="d-block w-100" alt="Comfortable Lodge Interior">
+                        <img src="img/liptonroom.webp" class="d-block w-100"
+                            alt="Cozy lodge interior with fireplace and wooden decor" loading="lazy">
                         <div class="carousel-caption animate-text">
-                            <h1>Relax in Comfort</h1>
-                            <p>Warm and welcoming rooms with all amenities</p>
+                            <h2>Relax in Comfort</h2>
+                            <p>Warm and welcoming rooms with all amenities.</p>
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img src="img/axe3.webp" class="d-block w-100" alt="Ice Climbing in Rjukan">
+                        <img src="img/axe3.webp" class="d-block w-100"
+                            alt="Ice climber scaling a frozen waterfall in Rjukan" loading="lazy">
                         <div class="carousel-caption animate-text">
-                            <h1>Thrill Seekers Welcome</h1>
-                            <p>Ice climbing, skiing, and year-round adventure</p>
+                            <h2>Thrill Seekers Welcome</h2>
+                            <p>Ice climbing, skiing, and year-round adventure.</p>
                         </div>
                     </div>
                 </div>
 
-                <button class="carousel-control-prev" type="button" data-bs-target="#heroSlider" data-bs-slide="prev">
+                <!-- Navigation Buttons -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#heroSlider" data-bs-slide="prev"
+                    aria-label="Previous Slide">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#heroSlider" data-bs-slide="next">
+                <button class="carousel-control-next" type="button" data-bs-target="#heroSlider" data-bs-slide="next"
+                    aria-label="Next Slide">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 </button>
 
+                <!-- Slide Indicators -->
                 <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#heroSlider" data-bs-slide-to="0" class="active"></button>
-                    <button type="button" data-bs-target="#heroSlider" data-bs-slide-to="1"></button>
-                    <button type="button" data-bs-target="#heroSlider" data-bs-slide-to="2"></button>
-                    <button type="button" data-bs-target="#heroSlider" data-bs-slide-to="3"></button>
-                    <button type="button" data-bs-target="#heroSlider" data-bs-slide-to="4"></button>
+                    <button type="button" data-bs-target="#heroSlider" data-bs-slide-to="0" class="active"
+                        aria-label="Go to slide 1"></button>
+                    <button type="button" data-bs-target="#heroSlider" data-bs-slide-to="1"
+                        aria-label="Go to slide 2"></button>
+                    <button type="button" data-bs-target="#heroSlider" data-bs-slide-to="2"
+                        aria-label="Go to slide 3"></button>
+                    <button type="button" data-bs-target="#heroSlider" data-bs-slide-to="3"
+                        aria-label="Go to slide 4"></button>
+                    <button type="button" data-bs-target="#heroSlider" data-bs-slide-to="4"
+                        aria-label="Go to slide 5"></button>
                 </div>
             </div>
         </header>
 
         <main class="main-content">
-
             <!-- Lodges Section -->
             <section id="lodges" class="py-5">
                 <div class="container">
+                    <h2 class="text-center">Our Lodges</h2>
+                    <p class="text-center">Choose between two cozy accommodations nestled in the heart of Rjukan.</p>
 
                     <div class="lodge-container">
                         <!-- Heavy Water Lodge -->
-                        <div class="lodge-box">
+                        <article class="lodge-box">
                             <div class="lodge-content">
                                 <h3>Heavy Water Lodge</h3>
                                 <p>Experience the stunning Norwegian landscape in our cozy Heavy Water Lodge.</p>
@@ -181,24 +213,27 @@
                             </div>
                             <div class="lodge-gallery" data-gallery="heavy-water">
                                 <div class="gallery-container">
-                                    <img src="img/liptonaxe.webp" alt="Heavy Water Lodge Exterior" class="gallery-img"
-                                        data-index="0">
-                                    <img src="img/liptonbed.webp" alt="Heavy Water Lodge Interior" class="gallery-img"
-                                        data-index="1">
-                                    <img src="img/liptoncabinet.webp" alt="Heavy Water Lodge Bedroom" class="gallery-img"
-                                        data-index="2">
-                                    <img src="img/liptonkitchen.webp" alt="Heavy Water Lodge Sauna" class="gallery-img"
-                                        data-index="3">
-                                    <img src="img/liptonstudy.webp" alt="Heavy Water Lodge Kitchen" class="gallery-img"
-                                        data-index="4">
-                                    <img src="img/liptonroom.webp" alt="Heavy Water Lodge Kitchen" class="gallery-img"
-                                        data-index="5">
+                                    <img src="img/liptonaxe.webp"
+                                        alt="Exterior view of Heavy Water Lodge in Rjukan, Norway" class="gallery-img"
+                                        data-index="0" loading="lazy">
+                                    <img src="img/liptonbed.webp" alt="Cozy bedroom inside Heavy Water Lodge"
+                                        class="gallery-img" data-index="1" loading="lazy">
+                                    <img src="img/liptoncabinet.webp"
+                                        alt="Spacious room with wooden decor at Heavy Water Lodge" class="gallery-img"
+                                        data-index="2" loading="lazy">
+                                    <img src="img/liptonkitchen.webp" alt="Fully equipped kitchen in Heavy Water Lodge"
+                                        class="gallery-img" data-index="3" loading="lazy">
+                                    <img src="img/liptonstudy.webp"
+                                        alt="Warm and inviting living area inside Heavy Water Lodge" class="gallery-img"
+                                        data-index="4" loading="lazy">
+                                    <img src="img/liptonroom.webp" alt="Comfortable lounge space at Heavy Water Lodge"
+                                        class="gallery-img" data-index="5" loading="lazy">
                                 </div>
                             </div>
-                        </div>
+                        </article>
 
                         <!-- Adventure Base -->
-                        <div class="lodge-box">
+                        <article class="lodge-box">
                             <div class="lodge-content">
                                 <h3>Adventure Base</h3>
                                 <p>Ideal for thrill-seekers and explorers, Adventure Base offers a perfect stay.</p>
@@ -218,24 +253,28 @@
                             <div class="lodge-gallery" data-gallery="adventure-base">
                                 <div class="gallery-container">
                                     <img src="img/test_apartman/apartment.webp"
-                                        alt="Adventure Base Exterior" class="gallery-img" data-index="0">
-                                    <img src="img/test_apartman/bedroom.webp" alt="Adventure Base Interior"
-                                        class="gallery-img" data-index="1">
-                                    <img src="img/test_apartman/kitchen.webp" alt="Adventure Base Bedroom"
-                                        class="gallery-img" data-index="2">
+                                        alt="Scenic exterior view of Adventure Base" class="gallery-img" data-index="0"
+                                        loading="lazy">
+                                    <img src="img/test_apartman/bedroom.webp" alt="Cozy bedroom inside Adventure Base"
+                                        class="gallery-img" data-index="1" loading="lazy">
+                                    <img src="img/test_apartman/kitchen.webp"
+                                        alt="Fully equipped kitchen at Adventure Base" class="gallery-img"
+                                        data-index="2" loading="lazy">
                                     <img src="img/test_apartman/living-roomjpg.webp"
-                                        alt="Adventure Base Bathroom" class="gallery-img" data-index="3">
-                                    <img src="img/test_apartman/window.webp" alt="Adventure Base Fireplace"
-                                        class="gallery-img" data-index="4">
-                                    <img src="img/test_apartman/lofoten.webp" alt="Adventure Base Fireplace"
-                                        class="gallery-img" data-index="4">
+                                        alt="Comfortable living area with modern decor at Adventure Base"
+                                        class="gallery-img" data-index="3" loading="lazy">
+                                    <img src="img/test_apartman/window.webp"
+                                        alt="Panoramic nature view from Adventure Base" class="gallery-img"
+                                        data-index="4" loading="lazy">
+                                    <img src="img/test_apartman/lofoten.webp"
+                                        alt="Warm and rustic bedroom setup at Adventure Base" class="gallery-img"
+                                        data-index="5" loading="lazy">
                                 </div>
                             </div>
-                        </div>
+                        </article>
                     </div>
                 </div>
             </section>
-
 
             <!-- MODAL STRUCTURE FOR IMAGE VIEWER -->
             <div id="imageModal">
@@ -304,7 +343,7 @@
                         <h2><i class="bi bi-house-door"></i> About Adventure Base</h2>
                         <p>
                             Adventure Base is designed for explorers and thrill-seekers who want to experience the best
-                            of Rjukan’s outdoor activities. Whether you're a climber, hiker, or winter sports
+                            of Rjukan's outdoor activities. Whether you're a climber, hiker, or winter sports
                             enthusiast, this lodge is your perfect retreat.
                         </p>
 
@@ -353,146 +392,227 @@
 
                     <div class="row g-4">
                         <!-- Heavy Water Lodge Map -->
-                        <div class="col-md-6">
+                        <article class="col-md-6">
                             <div class="map-box">
                                 <h3 class="text-center">Heavy Water Lodge</h3>
                                 <div class="map-container">
-                                    <iframe
+                                    <iframe title="Location of Heavy Water Lodge, Rjukan, Norway"
                                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1303.6449204209!2d8.497701458120156!3d59.87573168012807!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x463f5c518904f7ed%3A0x911927779dc14eea!2s3660%20Rjukan%2C%20Norway!5e1!3m2!1sen!2hu!4v1738618901501!5m2!1sen!2hu"
                                         width="100%" height="300" style="border:0;" allowfullscreen=""
                                         loading="lazy"></iframe>
                                 </div>
                             </div>
-                        </div>
+                        </article>
 
                         <!-- Adventure Base Map -->
-                        <div class="col-md-6">
+                        <article class="col-md-6">
                             <div class="map-box">
                                 <h3 class="text-center">Adventure Base</h3>
                                 <div class="map-container">
-                                    <iframe
+                                    <iframe title="Location of Adventure Base, Rjukan, Norway"
                                         src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d1303.6258121583173!2d8.497476152562912!3d59.876218979011476!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNTnCsDUyJzM0LjQiTiA4wrAyOSc1OS40IkU!5e1!3m2!1sen!2hu!4v1738618703076!5m2!1sen!2hu"
                                         width="100%" height="300" style="border:0;" allowfullscreen=""
                                         loading="lazy"></iframe>
                                 </div>
                             </div>
-                        </div>
+                        </article>
                     </div>
                 </div>
             </section>
 
-
-            <!-- Contact and Host Information -->
+            <!-- CONTACT & HOST INFORMATION -->
             <section id="contact" class="py-5">
                 <div class="container text-center">
-                    <h2>Contact & Host Information</h2>
+                    <h3>Contact & Host Information</h3>
                     <p>For inquiries, booking, or adventure guidance, feel free to reach out!</p>
 
                     <!-- Contact Details -->
-                    <div class="contact-info">
-                        <p><strong>Email:</strong> <a
-                                href="mailto:norway@heavywateradventures.com">norway@heavywateradventures.com</a></p>
-                        <p><strong>Phone:</strong> <a href="tel:+4746241462">+47 462 41 462</a></p>
-                    </div>
+                    <address class="contact-info">
+                        <p><strong>Email:</strong>
+                            <a href="mailto:norway@heavywateradventures.com"
+                                aria-label="Send an email to Heavy Water Adventures">
+                                norway@heavywateradventures.com
+                            </a>
+                        </p>
+                        <p><strong>Phone:</strong>
+                            <a href="tel:+4746241462" aria-label="Call Heavy Water Adventures at +47 462 41 462">
+                                +47 462 41 462
+                            </a>
+                        </p>
+                    </address>
+                </div>
 
-                    <!-- Host Information -->
-                    <div class="host-info">
-                        <h3>Meet Your Host: <span class="highlight">Peter Szeredi</span></h3>
-                        <div class="host-content">
-                            <img src="img/peti_img/mountain_lodge_landscape.webp" alt="Peter Szeredi - Host" class="host-photo">
+                <!-- Host Information -->
+                <div class="host-info">
+                    <h3 class="text-center">Meet Your Host</h3>
+                    <article class="host-info text-center">
+                        <h3>Meet <span class="highlight">Peter Szeredi</span></h3>
+                        <div class="host-content d-flex flex-column align-items-center">
+                            <img src="img/peti_img/mountain_lodge_landscape.webp"
+                                alt="Portrait of Peter Szeredi, host and outdoor guide in Rjukan, Norway"
+                                class="host-photo" loading="lazy">
                             <p>
                                 Peter is an experienced outdoor adventurer with extensive knowledge of the Rjukan area.
                                 Living in Norway for several years, he is fluent in English, Hungarian, and Norwegian.
-                                As a professional **kayaker, climber, and ski tourer**, Peter knows every hidden gem in
-                                the region.
+                                As a professional <strong>kayaker, climber, and ski tourer</strong>, Peter knows every
+                                hidden gem in the region.
                                 Whether you are looking for the best climbing spots, ski tours, or kayaking routes,
                                 he is happy to provide guidance and recommendations.
                             </p>
                         </div>
-                    </div>
 
-                    <!-- Social Media Links -->
-                    <div class="social-links">
-                        <h4>Follow Us</h4>
-                        <a href="https://www.facebook.com/profile.php?id=100063650139284" class="social-icon me-3"
-                            target="_blank">
-                            <i class="bi bi-facebook"></i>
-                        </a>
-                        <a href="#" class="social-icon me-3">
-                            <i class="bi bi-instagram"></i>
-                        </a>
-                    </div>
+                        <!-- Social Media & Newsletter Subscription -->
+                        <section class="social-links text-center mt-5">
+                            <h3>Stay Connected</h3>
+                            <p>Follow us for the latest updates and exclusive offers.</p>
 
+                            <!-- Facebook Follow Button -->
+                            <a href="https://www.facebook.com/profile.php?id=100063650139284" class="social-icon me-3"
+                                target="_blank" rel="noopener noreferrer"
+                                aria-label="Follow Heavy Water Adventures on Facebook">
+                                <i class="bi bi-facebook"></i> Follow us on Facebook
+                            </a>
 
+                            <hr class="w-50 mx-auto my-4">
 
-        </main>
+                            <!-- Newsletter Subscription -->
+                            <h3>Subscribe to Our Newsletter</h3>
+                            <p>Get exclusive travel tips, special offers, and updates delivered to your inbox.</p>
 
-        <!-- Footer -->
-        <footer class="bg-dark text-white text-center py-4">
-            <div class="container">
-                <div class="row">
-                    <!-- Contact Info -->
-                    <div class="col-md-4 mb-3">
-                        <h5>Contact Us</h5>
-                        <p>Email: <a href="mailto:info@heavywateradventures.com"
-                                class="text-white">info@heavywateradventures.com</a></p>
-                        <p>Phone: <a href="tel:+4712345678" class="text-white">+47 123 456 78</a></p>
-                    </div>
+                            <form id="newsletterSubscription" class="d-flex flex-column align-items-center">
+                                <div class="mb-3 w-100" style="max-width: 400px;">
+                                    <label for="newsletter-email" class="visually-hidden">Email Address</label>
+                                    <input type="email" class="form-control" id="newsletter-email"
+                                        name="newsletter-email" placeholder="Enter your email" required
+                                        aria-required="true">
+                                </div>
 
-                    <!-- Navigation Links -->
-                    <div class="col-md-4 mb-3">
-                        <h5>Quick Links</h5>
-                        <ul class="list-unstyled">
-                            <li><a href="index.html" class="text-white">Home</a></li>
-                            <li><a href="about.html" class="text-white">About Us</a></li>
-                            <li><a href="gallery.html" class="text-white">Gallery</a></li>
-                            <li><a href="booking.html" class="text-white">Stay With Us</a></li>
-                        </ul>
-                    </div>
+                                <!-- Consent Checkbox -->
+                                <div class="form-check mb-3">
+                                    <input class="form-check-input" type="checkbox" id="newsletter-consent"
+                                        name="newsletter-consent" required aria-required="true">
+                                    <label class="form-check-label small text-muted" for="newsletter-consent">
+                                        I agree to receive emails and understand I can unsubscribe at any time.
+                                    </label>
+                                </div>
 
-                    <!-- Social Media Links -->
-                    <div class="col-md-4 mb-3">
-                        <h5>Follow Us</h5>
-                        <a href="https://www.facebook.com/profile.php?id=100063650139284" target="_blank"
-                            class="text-white me-3">
-                            <i class="bi bi-facebook" style="font-size: 1.5rem;"></i>
-                        </a>
-                        <a href="#" class="text-white">
-                            <i class="bi bi-instagram" style="font-size: 1.5rem;"></i>
-                        </a>
-                    </div>
+                                <button type="submit" class="btn btn-primary">Subscribe</button>
+                            </form>
+                </div>
+    </div>
+    </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-4">
+        <div class="container">
+            <div class="row">
+                <!-- Contact Information -->
+                <div class="col-md-4 mb-3">
+                    <h5>Contact Us</h5>
+                    <address>
+                        <p>Email:
+                            <a href="mailto:info@heavywateradventures.com" class="text-white"
+                                aria-label="Send an email to Heavy Water Adventures">
+                                info@heavywateradventures.com
+                            </a>
+                        </p>
+                        <p>Phone:
+                            <a href="tel:+4712345678" class="text-white"
+                                aria-label="Call Heavy Water Adventures at +47 123 456 78">
+                                +47 123 456 78
+                            </a>
+                        </p>
+                    </address>
                 </div>
 
-                <hr class="bg-light">
+                <!-- Quick Links -->
+                <nav class="col-md-4 mb-3" aria-label="Quick Navigation">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-white">Home</a></li>
+                        <li><a href="about.html" class="text-white">About Us</a></li>
+                        <li><a href="gallery.html" class="text-white">Gallery</a></li>
+                        <li><a href="booking.html" class="text-white">Book Your Stay</a></li>
+                    </ul>
+                </nav>
 
-                <p class="mb-0">&copy; 2025 Heavy Water Adventures | <a href="privacy.html" class="text-white" target="_blank">Privacy
-                        Policy</a></p>
+                <!-- Social Media -->
+                <div class="col-md-4 mb-3">
+                    <h5>Follow Us</h5>
+                    <a href="https://www.facebook.com/profile.php?id=100063650139284" target="_blank"
+                        rel="noopener noreferrer" class="text-white me-3"
+                        aria-label="Follow Heavy Water Adventures on Facebook">
+                        <i class="bi bi-facebook" style="font-size: 1.5rem;"></i>
+                    </a>
+                </div>
             </div>
-        </footer>
 
+            <hr class="bg-light">
+
+            <p class="mb-0">&copy; 2025 Heavy Water Adventures |
+                <a href="privacy.html" class="text-white" target="_blank" aria-label="Read our Privacy Policy">
+                    Privacy Policy
+                </a>
+            </p>
+
+            <!-- Manage Cookies Button -->
+            <button id="modifyCookies" class="btn btn-warning mt-3">Manage Cookie Settings</button>
+        </div>
+    </footer>
 
     </div> <!-- End main-container -->
 
     <!-- BACK TO TOP BUTTON -->
-    <button id="backToTop" class="back-to-top" onclick="scrollToTop()">&#8679;</button>
+    <button id="backToTop" class="back-to-top" onclick="scrollToTop()" aria-label="Scroll back to top">&#8679;</button>
 
     <!-- COOKIE BANNER -->
     <div id="cookieBanner" class="cookie-banner">
-        <p>This website uses cookies to ensure you get the best experience. <a href="#">Learn more</a></p>
-        <button id="acceptCookiesBtn">Accept</button>
+        <p>This website uses cookies to enhance your experience. You can choose which cookies to allow.</p>
+        <button id="acceptAllCookies">Accept All</button>
+        <button id="rejectCookies">Reject Non-Essential</button>
+        <button id="customizeCookies">Customize</button>
     </div>
 
+    <!-- COOKIE SETTINGS MODAL -->
+    <div id="cookieModal" class="cookie-modal hidden" role="dialog" aria-labelledby="cookieModalTitle">
+        <button id="closeCookieModal" class="close-modal" aria-label="Close cookie settings">&times;</button>
+        <h2 id="cookieModalTitle">Cookie Preferences</h2>
+        <p>Select which types of cookies you accept:</p>
+        <label>
+            <input type="checkbox" id="necessaryCookies" disabled checked> Necessary (always enabled)
+        </label>
+        <label>
+            <input type="checkbox" id="analyticsCookies"> Analytics
+        </label>
+        <label>
+            <input type="checkbox" id="marketingCookies"> Marketing
+        </label>
+        <br>
+        <button id="saveCookiePreferences">Save Preferences</button>
+    </div>
+
+    <!-- QUESTION BUTTON -->
+    <a href="booking.html#contact-form" id="questionButton" class="question-button"
+        aria-label="Ask a question about booking">
+        <i class="bi bi-chat-dots"></i>
+    </a>
+
     <!-- BOOKING BUTTON -->
-    <a href="booking.html" id="bookingButton" class="booking-button">
+    <a href="booking.html" id="bookingButton" class="booking-button" aria-label="Proceed to booking page">
         <i class="bi bi-calendar-check"></i>
     </a>
+
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="script/nav.js"></script>
-    <script src="script/lodge.js"></script>
+    <script src="script/lodge-gallery.js"></script>
     <script src="script/lodge_about.js"></script>
-    <script src="script/index_extra.js"></script>
+    <script src="script/cookie-banner.js"></script>
+    <script src="script/back-to-up-button.js"></script>
+    <script src="script/header.js"></script>
 </body>
 
 </html>

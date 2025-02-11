@@ -2,65 +2,65 @@
 <html lang="en">
 
 <head>
+    <!-- ⚠️ REMOVE THIS BEFORE GOING LIVE: Prevents Google from indexing the site -->
+    <meta name="robots" content="noindex, nofollow">
 
-     <!-- Google Indexelés Tiltása (Ezt vedd ki, ha már éles az oldal) -->
-     <meta name="robots" content="noindex, nofollow">
-     
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Discover Rjukan | Heavy Water Adventures</title>
+    <title>About Heavy Water Adventures | Explore Rjukan</title>
 
+    <!-- SEO Optimized Meta Tags -->
     <meta name="description"
-        content="Discover the adventure paradise of Rjukan! Ice climbing, skiing, hiking, and bungee jumping await you. Stay at Heavy Water Adventures for the best experience.">
+        content="Learn more about Heavy Water Adventures in Rjukan, Norway. Experience the best of ice climbing, skiing, hiking, and adventure tourism in the heart of Scandinavia.">
     <meta name="keywords"
-        content="Rjukan, Norway, adventure, ice climbing, skiing, hiking, bungee jumping, Heavy Water Adventures">
+        content="Rjukan, Norway, adventure, ice climbing, skiing, hiking, Heavy Water Adventures, history, lodges">
     <meta name="author" content="Heavy Water Adventures">
 
-    <!-- Open Graph Meta Tags (Facebook, LinkedIn) -->
-    <meta property="og:title" content="Discover Rjukan - Heavy Water Adventures">
+    <!-- Canonical Link (Avoids duplicate content issues) -->
+    <link rel="canonical" href="https://heavywateradventures.com/about.html">
+
+    <!-- Open Graph (Facebook & LinkedIn) -->
+    <meta property="og:title" content="About Heavy Water Adventures - Explore Rjukan">
     <meta property="og:description"
-        content="Explore the best activities in Rjukan! Ice climbing, skiing, hiking, and bungee jumping. Stay at Heavy Water Adventures for a true adventure experience.">
-    <meta property="og:image" content="https://heavywateradventures.com/img/rjukan-adventure.jpg">
+        content="Discover the story behind Heavy Water Adventures. Stay in our Scandinavian-style lodges and explore the best of Rjukan's adventure tourism.">
+    <meta property="og:image" content="https://heavywateradventures.com/img/about-preview.jpg">
     <meta property="og:url" content="https://heavywateradventures.com/about.html">
     <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Heavy Water Adventures">
 
     <!-- Twitter Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Discover Rjukan - Heavy Water Adventures">
+    <meta name="twitter:title" content="About Heavy Water Adventures - Explore Rjukan">
     <meta name="twitter:description"
-        content="Adventure in Rjukan: Ice climbing, skiing, hiking & bungee jumping. Stay at Heavy Water Adventures.">
-    <meta name="twitter:image" content="https://heavywateradventures.com/img/rjukan-adventure.jpg">
-
-    <!-- Canonical Link -->
-    <link rel="canonical" href="https://heavywateradventures.com/about.html">
+        content="Discover the story behind Heavy Water Adventures and explore the best adventure tourism in Rjukan, Norway.">
+    <meta name="twitter:image" content="https://heavywateradventures.com/img/about-preview.jpg">
 
     <!-- Favicon -->
     <link rel="icon" href="favicon.ico" type="image/x-icon">
-<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-
-<meta property="og:title" content="Heavy Water Adventures">
-<meta property="og:site_name" content="Heavy Water Adventures">
-<meta property="og:url" content="http://heavywateradventures.com">
-<meta property="og:type" content="website">
-<meta property="og:image" content="http://heavywateradventures.com/img/logo.png">
-<meta property="og:description" content="Stay in our cozy Scandinavian-style lodges in Rjukan. Perfect for climbing, skiing, and adventure!">
-
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
 
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Custom CSS (style.css) -->
+    <!-- Custom Stylesheet -->
     <link rel="stylesheet" href="css/style.css">
 
-    <!-- Bootstrap Icons (for social links) -->
+    <!-- Bootstrap Icons (For Social Links & UI) -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
 
-    <!-- Google Fonts -->
+    <!-- Google Fonts (Preloaded for Faster Rendering) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
 
-    <!-- Font Awesome (Icons) -->
-    <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
+    <!-- Font Awesome (For Additional Icons) -->
+    <script defer src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap JavaScript (Defer for Performance) -->
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 
 <body>
@@ -69,37 +69,52 @@
     <div class="main-container">
 
         <!-- Navigation -->
-        <nav id="mainNav" class="navbar navbar-expand-lg fixed-top">
+        <nav id="mainNav" class="navbar navbar-expand-lg fixed-top" role="navigation" aria-label="Main Navigation">
             <div class="container-fluid d-flex align-items-center justify-content-between">
 
                 <!-- Logo -->
-                <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <a class="navbar-brand d-flex align-items-center" href="index.html"
+                    aria-label="Heavy Water Adventures Home">
                     <img src="img/logo.webp" alt="Heavy Water Adventures Logo" class="nav-logo">
                 </a>
 
                 <!-- Mobile Toggle -->
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
                 <!-- Navigation Links -->
                 <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
                     <ul class="navbar-nav">
-                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
-                        <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
-                        <li class="nav-item"><a class="nav-link" href="booking.html">Stay With Us</a></li>
+
+                        <!-- Home -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html" aria-label="Go to Home">Home</a>
+                        </li>
+
+                        <!-- About Us -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html" aria-label="Learn more about us">About Us</a>
+                        </li>
+
+                        <!-- Gallery -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="gallery.html" aria-label="View our gallery">Gallery</a>
+                        </li>
+
+                        <!-- Stay With Us -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="booking.html" aria-label="Book your stay">Stay With Us</a>
+                        </li>
                     </ul>
                 </div>
 
                 <!-- Social Links -->
                 <div class="header-social-links d-flex">
                     <a href="https://www.facebook.com/profile.php?id=100063650139284" target="_blank"
-                        rel="noopener noreferrer" class="social-icon facebook">
+                        rel="noopener noreferrer" class="social-icon facebook" aria-label="Visit our Facebook page">
                         <i class="bi bi-facebook"></i>
-                    </a>
-                    <a href="#" class="social-icon instagram">
-                        <i class="bi bi-instagram"></i>
                     </a>
                 </div>
             </div>
@@ -109,335 +124,619 @@
         <div id="about-page">
             <div class="container mt-5 pt-5">
 
-                <!-- Rjukan section -->
-
+                <!-- Rjukan Section -->
                 <section id="rjukan-intro" class="container mt-5">
                     <div class="text-center">
-                        <h2 class="display-4 font-weight-bold">Discover Rjukan: The Adventure Capital</h2>
-                        <p class="lead text-muted">An outdoor paradise in the heart of Norway</p>
-                        <hr class="w-50 mx-auto">
-                    </div>
-
-                    <div class="row">
-                        <div class="col-md-6">
-                            <img src="img/cover2.webp" alt="Rjukan Panorama" class="img-fluid rounded shadow">
-                        </div>
-                        <div class="col-md-6">
-                            <p class="text-justify">
-                                Rjukan is a breathtaking town in Norway, famous for its stunning landscapes and extreme
-                                sports opportunities.
-                                Whether you're an experienced adventurer or a first-time explorer, Rjukan has something
-                                for
-                                everyone.
-                            </p>
-                            <p class="text-justify">
-                                From world-class ice climbing to scenic hiking trails and thrilling bungee jumps, every
-                                visit is a new experience.
-                            </p>
-
-                            <!-- Button to open More About Rjukan Modal -->
-                            <div class="text-center mt-4">
-                                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#moreRjukanModal">
-                                    Learn More 
-                                </button>
-                            </div>
-
-                        </div>
-                    </div>
-                </section>
-
-                <!-- Activites section -->
-
-                <section id="activities" class="container mt-5">
-                    <h3 class="text-center font-weight-bold mb-4">Top Activities in Rjukan</h3>
-
-                    <!-- Ice Climbing -->
-                    <div class="row align-items-center mb-4">
-                        <div class="col-md-6">
-                            <img src="img/peti_img/ice_climbing_frozen_waterfall.webp" alt="Ice Climbing in Rjukan" class="img-fluid rounded shadow">
-                        </div>
-                        <div class="col-md-6">
-                            <h4>Ice Climbing</h4>
-                            <p>Rjukan is one of the world's best ice climbing destinations, attracting climbers from all
-                                over.</p>
-                            <a href="https://en.visitrjukan.com/things-to-do/ice-climbing-in-rjukan-p150493"
-                                target="_blank" class="btn btn-outline-primary">More Info</a>
-                        </div>
-                    </div>
-
-                    <!-- Skiing -->
-                    <div class="row align-items-center mb-4">
-                        <div class="col-md-6 order-md-2">
-                            <img src="img/peti_img/ski_touring_mountains.webp" alt="Skiing in Rjukan" class="img-fluid rounded shadow">
-                        </div>
-                        <div class="col-md-6 order-md-1">
-                            <h4>Skiing at Gausta Skisenter</h4>
-                            <p>Enjoy the slopes of Gausta Skisenter, offering breathtaking views and perfect snow
-                                conditions.</p>
-                            <a href="https://gausta.com/gausta-skisenter/" target="_blank"
-                                class="btn btn-outline-primary">More Info</a>
-                        </div>
-                    </div>
-
-                    <!-- Hiking -->
-                    <div class="row align-items-center mb-4">
-                        <div class="col-md-6">
-                            <img src="img/peti_img/snowy_mountain_forest.webp" alt="Hiking in Gaustatoppen" class="img-fluid rounded shadow">
-                        </div>
-                        <div class="col-md-6">
-                            <h4>Hiking to Gaustatoppen</h4>
-                            <p>Reach the peak of Gaustatoppen and enjoy panoramic views of Norway's stunning landscapes.
-                            </p>
-                            <a href="https://www.visitnorway.com/places-to-go/eastern-norway/telemark/gaustatoppen/"
-                                target="_blank" class="btn btn-outline-primary">More Info</a>
-                        </div>
-                    </div>
-
-                    <!-- Bungee Jumping -->
-                    <div class="row align-items-center mb-4">
-                        <div class="col-md-6 order-md-2">
-                            <img src="img/bungy-jumping.webp" alt="Bungee Jumping in Rjukan" class="img-fluid rounded shadow">
-                        </div>
-                        <div class="col-md-6 order-md-1">
-                            <h4>Bungee Jumping at Vemork Bridge</h4>
-                            <p>Experience the ultimate adrenaline rush at one of Norway’s highest bungee jumping spots.
-                            </p>
-                            <a href="https://en.visitrjukan.com/things-to-do/norways-toughest-bungee-jump-p509623"
-                                target="_blank" class="btn btn-outline-primary">More Info</a>
-                        </div>
-                    </div>
-                </section>
-
-                <!-- Heavy Water Section -->
-
-                <section id="heavy-water-adventures" class="container mt-5">
-                    <div class="text-center">
-                        <h2 class="display-4 font-weight-bold">About Heavy Water Adventures</h2>
-                        <p class="lead text-muted">Your adventure base in the heart of Rjukan</p>
-                        <hr class="w-50 mx-auto">
-                    </div>
-
-                    <div class="row">
-                        <div class="col-md-6">
-                            <p class="text-justify">
-                                At Heavy Water Adventures, we offer a unique experience for groups and adventure
-                                enthusiasts. Our two houses, Heavy Water Lodge and Adventure Base, provide comfortable,
-                                modern accommodations with easy access to nature’s wonders. Whether you’re here for ice
-                                climbing, skiing, hiking, or simply to relax in a beautiful natural environment, we’ve
-                                got
-                                you covered.
-                            </p>
-                            <p class="text-justify">
-                                Our houses are equipped with all the essentials for a memorable stay. Spacious rooms, a
-                                fully equipped kitchen, a sauna, and private parking are just the beginning. We are
-                                located
-                                near world-renowned adventure spots, offering you the perfect base for your next
-                                journey.
-                            </p>
-                            <p class="text-justify">
-                                Whether you're an experienced adventurer or a first-time explorer, Heavy Water
-                                Adventures is
-                                the place to make unforgettable memories with friends or family.
-                            </p>
-                        </div>
-                        <div class="col-md-6">
-                            <img src="img/liptonaxe.webp" alt="Heavy Water Lodge" class="img-fluid rounded shadow">
-                        </div>
-                    </div>
-                </section>
-
-                <section id="about-peti" class="container mt-5">
-                    <div class="text-center">
-                        <h2 class="display-4 font-weight-bold">Meet Peti - The Adventurer Behind Heavy Water Adventures
-                        </h2>
-                        <p class="lead text-muted">A passionate explorer, ice climber, and outdoor guide</p>
+                        <h1 class="display-4 font-weight-bold">Rjukan: Norway's Ultimate Adventure Hub</h1>
                         <hr class="w-50 mx-auto">
                     </div>
 
                     <div class="row align-items-center">
                         <div class="col-md-6">
-                            <img src="img/peti_img/frozen_climb.webp" alt="Peti Ice Climbing" class="img-fluid rounded shadow">
+                            <img src="img/cover2.webp"
+                                alt="Panoramic view of Rjukan, Norway with mountains and scenic landscape"
+                                class="img-fluid rounded shadow" loading="lazy">
                         </div>
                         <div class="col-md-6">
-                            <p class="text-justify">
-                                Peti is a seasoned adventurer with years of experience in extreme outdoor sports. As a
-                                professional ice climber, he has conquered some of the toughest ice walls in Norway. His
-                                deep knowledge of the mountains makes him a trusted guide for those looking for the
-                                ultimate
-                                adventure.
+                            <p>
+                                Nestled in Norway's wild heart, Rjukan is a paradise for climbers, hikers, and
+                                adrenaline seekers.
                             </p>
-                            <p class="text-justify">
-                                Before founding Heavy Water Adventures, Peti organized thrilling **kayak tours**,
-                                guiding
-                                explorers through Norway’s breathtaking fjords. His passion for water and adventure made
-                                these experiences truly unforgettable.
+                            <p>
+                                Conquer frozen waterfalls, trek breathtaking trails, or experience Norway's most
+                                thrilling bungee jumps.
                             </p>
-                            <p class="text-justify">
-                                As an experienced **bungee jumping assistant**, he has helped countless adrenaline
-                                seekers
-                                take the leap of their lives at Norway’s iconic jump sites. His expertise ensures safety
-                                while keeping the excitement level at its peak.
-                            </p>
-                        </div>
-                    </div>
 
-                    <!-- Button to open More About Heavy Water Adventures & Peti Modal -->
-                    <div class="text-center mt-4">
-                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#aboutPetiModal">
-                            Learn More 
-                        </button>
-                    </div>
-
-
-                    <div class="row mt-4">
-                        <div class="col-md-4">
-                            <img src="img/peti_img/beachside_kayak_adventure.webp" alt="Peti Kayak Tour" class="img-fluid rounded shadow">
-                        </div>
-                        <div class="col-md-4">
-                            <img src="img/peti_img/kayak_waterfall_rapids.webp" alt="Peti Kayaking" class="img-fluid rounded shadow">
-                        </div>
-                        <div class="col-md-4">
-                            <img src="img/peti_img/rock_climbing_summit.webp" alt="Peti Hiking" class="img-fluid rounded shadow">
+                            <!-- Button to open More About Rjukan Modal -->
+                            <div class="text-center mt-4">
+                                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#moreRjukanModal"
+                                    aria-label="Learn more about Rjukan adventures">
+                                    Learn More
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </section>
 
-                
-<!-- Modal for More Info on Rjukan -->
-<div class="modal fade" id="moreRjukanModal" tabindex="-1" aria-labelledby="moreRjukanLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="moreRjukanLabel">More About Rjukan</h5>
-            </div>
-            <div class="modal-body">
-                <p>Rjukan is a UNESCO-listed town with a deep historical and cultural significance.
-                    It is home to the famous Vemork Power Station, the site of the WWII heavy water
-                    sabotage mission.
-                </p>
-                <p>For history lovers, the <a href="https://www.nia.no/vemork" target="_blank">Vemork
-                        Museum</a> is a must-visit.</p>
-                <p>Plan your visit and enjoy everything this adventure paradise has to offer!</p>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-            </div>
-        </div>
-    </div>
-</div>
+                <!-- Activities Section -->
+                <section id="activities" class="container mt-5">
+                    <div class="text-center">
+                        <h2 class="font-weight-bold mb-4">Top Outdoor Activities in Rjukan</h2>
+                        <p>Explore the best adventure experiences that Rjukan has to offer.</p>
+                        <hr class="w-50 mx-auto">
+                    </div>
 
-<!-- Modal for More Info on Heavy Water Adventures & Peti -->
-<div class="modal fade" id="aboutPetiModal" tabindex="-1" aria-labelledby="aboutPetiLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
+                    <!-- Ice Climbing -->
+                    <article class="row align-items-center mb-5">
+                        <div class="col-md-6">
+                            <img src="img/peti_img/ice_climbing_frozen_waterfall.webp"
+                                alt="Ice climber ascending a frozen waterfall in Rjukan, Norway"
+                                class="img-fluid rounded shadow" loading="lazy">
+                        </div>
+                        <div class="col-md-6">
+                            <h3>Ice Climbing</h3>
+                            <p>Rjukan is one of the world's premier ice climbing destinations, drawing climbers from
+                                around the globe.</p>
+                            <div class="text-center mt-3">
+                                <button class="btn btn-primary" data-bs-toggle="modal"
+                                    data-bs-target="#iceClimbingModal"
+                                    aria-label="Learn more about ice climbing in Rjukan">
+                                    Learn More
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Skiing -->
+                    <article class="row align-items-center mb-5">
+                        <div class="col-md-6 order-md-2">
+                            <img src="img/peti_img/ski_touring_mountains.webp"
+                                alt="Skiing on the slopes of Gausta Skisenter in Norway"
+                                class="img-fluid rounded shadow" loading="lazy">
+                        </div>
+                        <div class="col-md-6 order-md-1">
+                            <h3>Skiing at Gausta Skisenter</h3>
+                            <p>Carve through pristine slopes at Gausta Skisenter, offering breathtaking mountain views
+                                and top-notch snow conditions.</p>
+                            <div class="text-center mt-3">
+                                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#skiingModal"
+                                    aria-label="Learn more about skiing in Gausta Skisenter">
+                                    Learn More
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Hiking -->
+                    <article class="row align-items-center mb-5">
+                        <div class="col-md-6">
+                            <img src="img/peti_img/snowy_mountain_forest.webp"
+                                alt="Hiker on Gaustatoppen, Norway's highest peak" class="img-fluid rounded shadow"
+                                loading="lazy">
+                        </div>
+                        <div class="col-md-6">
+                            <h3>Hiking to Gaustatoppen</h3>
+                            <p>Embark on an unforgettable journey to the summit of Gaustatoppen and witness panoramic
+                                views across Norway.</p>
+                            <div class="text-center mt-3">
+                                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#hikingModal"
+                                    aria-label="Learn more about hiking to Gaustatoppen">
+                                    Learn More
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Bungee Jumping -->
+                    <article class="row align-items-center mb-5">
+                        <div class="col-md-6 order-md-2">
+                            <img src="img/bungy-jumping.webp"
+                                alt="Thrill-seeker bungee jumping from Vemork Bridge in Rjukan"
+                                class="img-fluid rounded shadow" loading="lazy">
+                        </div>
+                        <div class="col-md-6 order-md-1">
+                            <h3>Bungee Jumping at Vemork Bridge</h3>
+                            <p>Take the ultimate leap at one of Norway's highest bungee jumping spots for an
+                                adrenaline-pumping experience.</p>
+                            <div class="text-center mt-3">
+                                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#bungeeModal"
+                                    aria-label="Learn more about bungee jumping in Rjukan">
+                                    Learn More
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+                </section>
+
+                <!-- Heavy Water Adventures Section -->
+                <section id="heavy-water-adventures" class="container mt-5">
+                    <div class="text-center">
+                        <h2 class="display-4 font-weight-bold">About Heavy Water Adventures</h2>
+                        <p>Discover our adventure lodges and the unique experiences they offer.</p>
+                        <hr class="w-50 mx-auto">
+                    </div>
+
+                    <div class="row align-items-center">
+                        <div class="col-md-6">
+                            <p>
+                                At Heavy Water Adventures, we provide an unforgettable experience for adventure seekers.
+                                Our two lodges,
+                                <strong>Heavy Water Lodge</strong> and <strong>Adventure Base</strong>, offer modern
+                                accommodations
+                                with direct access to Norway's stunning wilderness.
+                            </p>
+                            <p>
+                                Whether you're into <strong>ice climbing, skiing, hiking,</strong> or just looking to
+                                unwind in nature,
+                                our lodges are fully equipped to meet your needs. Enjoy spacious rooms, a fully stocked
+                                kitchen,
+                                a private sauna, and more.
+                            </p>
+                            <p>
+                                Located near world-famous outdoor adventure spots, Heavy Water Adventures is the perfect
+                                base
+                                for your next thrilling journey.
+                            </p>
+                        </div>
+                        <div class="col-md-6">
+                            <img src="img/liptonaxe.webp"
+                                alt="Heavy Water Lodge - Modern adventure accommodation in Norway"
+                                class="img-fluid rounded shadow" loading="lazy">
+                        </div>
+                    </div>
+                </section>
+
+                <!-- About Peti Section -->
+                <section id="about-peti" class="container mt-5">
+                    <div class="text-center">
+                        <h2 class="display-4 font-weight-bold">Meet Peti - The Adventurer Behind Heavy Water Adventures
+                        </h2>
+                        <p>From ice climbing to bungee jumping, Peti has done it all.</p>
+                        <hr class="w-50 mx-auto">
+                    </div>
+
+                    <div class="row align-items-center">
+                        <div class="col-md-6">
+                            <img src="img/peti_img/frozen_climb.webp"
+                                alt="Peti Ice Climbing on frozen waterfalls in Norway" class="img-fluid rounded shadow"
+                                loading="lazy">
+                        </div>
+                        <div class="col-md-6">
+                            <h3>Extreme Outdoor Specialist</h3>
+                            <p>
+                                Peti is a seasoned adventurer with years of experience in extreme outdoor sports. As a
+                                professional
+                                <strong>ice climber</strong>, he has tackled some of Norway's toughest frozen walls.
+                            </p>
+                            <p>
+                                Before founding Heavy Water Adventures, he organized thrilling <strong>kayak
+                                    expeditions</strong>,
+                                guiding explorers through Norway's breathtaking fjords and whitewater rapids.
+                            </p>
+                            <p>
+                                As an experienced <strong>bungee jumping assistant</strong>, Peti has helped countless
+                                adrenaline seekers
+                                take the leap at Norway's most iconic jump sites—ensuring both safety and excitement.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- More About Peti Button -->
+                    <div class="text-center mt-4">
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#aboutPetiModal"
+                            aria-label="Learn more about Peti and his adventures">
+                            Learn More
+                        </button>
+                    </div>
+
+                    <!-- Peti's Adventure Gallery -->
+                    <div class="row mt-5">
+                        <div class="col-md-4">
+                            <img src="img/peti_img/beachside_kayak_adventure.webp"
+                                alt="Peti leading a kayak tour in Norway" class="img-fluid rounded shadow"
+                                loading="lazy">
+                        </div>
+                        <div class="col-md-4">
+                            <img src="img/peti_img/kayak_waterfall_rapids.webp"
+                                alt="Peti kayaking through whitewater rapids" class="img-fluid rounded shadow"
+                                loading="lazy">
+                        </div>
+                        <div class="col-md-4">
+                            <img src="img/peti_img/rock_climbing_summit.webp"
+                                alt="Peti rock climbing to a scenic summit" class="img-fluid rounded shadow"
+                                loading="lazy">
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Modal for More Info on Rjukan -->
+<div class="modal fade" id="moreRjukanModal" tabindex="-1" aria-labelledby="moreRjukanLabel" aria-hidden="true" role="dialog">
+    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
         <div class="modal-content">
+            <!-- Close Button -->
+            <button type="button" class="close-modal btn-close" data-bs-dismiss="modal" aria-label="Close Rjukan information modal"></button>
+
             <div class="modal-header">
-                <h5 class="modal-title" id="aboutPetiLabel">More About Heavy Water Adventures & Peti</h5>
+                <h2 class="modal-title" id="moreRjukanLabel">
+                    <i class="bi bi-info-circle"></i> Discover Rjukan: A UNESCO-Listed Adventure Town
+                </h2>
             </div>
+
             <div class="modal-body">
-                <h4>About Heavy Water Adventures</h4>
                 <p>
-                    Heavy Water Adventures was founded to provide the ultimate base for adventure
-                    seekers. Whether you're here for extreme sports or to explore the breathtaking landscapes,
-                    our lodges offer the perfect place to rest and recharge.
+                    <strong>Rjukan</strong>, nestled in the heart of Norway, is a <strong>UNESCO-listed</strong> town rich in history,
+                    culture, and outdoor adventure. Known for its <strong>dramatic landscapes, world-class ice climbing,</strong>
+                    and historical significance, Rjukan attracts both thrill-seekers and history enthusiasts alike.
+                </p>
+
+                <!-- Historic Section -->
+                <h3><i class="bi bi-bank"></i> The Historic Legacy of Rjukan</h3>
+                <p>
+                    Rjukan played a crucial role in World War II as the site of the famous
+                    <a href="https://www.nia.no/en/vemork" target="_blank" rel="noopener noreferrer">
+                        <i>Vemork Heavy Water Sabotage</i>
+                    </a>. The daring resistance operation in 1943 prevented Nazi Germany from developing an atomic bomb.
+                    Today, you can explore this incredible history at the
+                    <a href="https://www.nia.no/en" target="_blank" rel="noopener noreferrer">
+                        <i>Norwegian Industrial Workers Museum (NIA)</i>
+                    </a>.
+                </p>
+
+                <!-- Adventure Section -->
+                <h3><i class="bi bi-mountain"></i> Outdoor Adventures Await</h3>
+                <p>
+                    Rjukan is a paradise for adventurers. It boasts some of the world's best <strong>ice climbing routes</strong>,
+                    breathtaking <strong>hiking trails</strong>, and thrilling <strong>ski slopes</strong>. Popular activities include:
                 </p>
                 <ul>
-                    <li>Fully equipped lodges with a sauna and drying room.</li>
-                    <li>Close to Rjukan’s best climbing and hiking spots.</li>
-                    <li>Perfect for groups, adventurers, and outdoor enthusiasts.</li>
+                    <li><i class="bi bi-snow"></i> <a href="https://www.visitrjukan.com/climbing" target="_blank" rel="noopener noreferrer">
+                            <i>Ice Climbing</i></a> - One of the best ice climbing destinations in the world.</li>
+                    <li><i class="bi bi-tree"></i> <a href="https://www.visitrjukan.com/hiking" target="_blank" rel="noopener noreferrer">
+                            <i>Hiking Trails</i></a> - Trek through stunning mountain landscapes.</li>
+                    <li><i class="bi bi-cable-car"></i> <a href="https://www.krossobanen.no/en" target="_blank" rel="noopener noreferrer">
+                            <i>Krossobanen Cable Car</i></a> - Norway's first cable car with panoramic views.</li>
+                    <li><i class="bi bi-binoculars"></i> <a href="https://www.gaustabanen.no/" target="_blank" rel="noopener noreferrer">
+                            <i>Gaustatoppen</i></a> - Hike or take the Gaustabanen funicular to Norway's most spectacular viewpoint.</li>
                 </ul>
 
-                <h4>Meet Peti - The Man Behind The Adventure</h4>
+                <!-- Sun Mirrors Section -->
+                <h3><i class="bi bi-brightness-high"></i> Sun Mirrors: Rjukan's Ingenious Solution</h3>
                 <p>
-                    Peti has spent years mastering extreme outdoor sports. His journey started with ice
-                    climbing, where he conquered some of Norway's most challenging ice walls. He later led
-                    guided kayak tours through Norway’s fjords, sharing his love for adventure with
-                    fellow explorers.
+                    Due to its deep valley location, Rjukan receives <strong>no direct sunlight</strong> for almost six months a year.
+                    In 2013, a set of giant
+                    <a href="https://www.visitnorway.com/listings/the-giant-sun-mirrors-in-rjukan/3632/"
+                        target="_blank" rel="noopener noreferrer">
+                        <i>sun mirrors</i>
+                    </a> were installed to reflect sunlight into the town square, bringing light to its residents even in winter.
                 </p>
+
+                <!-- Cultural Section -->
+                <h3><i class="bi bi-building"></i> Cultural and Historical Landmarks</h3>
+                <ul>
+                    <li><i class="bi bi-train-front"></i> <a href="https://www.nia.no/en/the-rjukan-railway/" target="_blank"
+                            rel="noopener noreferrer">
+                            <i>Rjukanbanen Railway</i></a> - A historic railway crucial to Norway's industrial past.</li>
+                    <li><i class="bi bi-geo-alt"></i> <a href="https://www.visitnorway.com/places-to-go/eastern-norway/telemark/rjukan/"
+                            target="_blank" rel="noopener noreferrer">
+                            <i>Rjukan Town</i></a> - Explore charming streets, local shops, and authentic Norwegian culture.</li>
+                </ul>
+
+                <!-- Planning Your Visit -->
+                <h3><i class="bi bi-calendar"></i> Plan Your Visit</h3>
                 <p>
-                    As a bungee jumping assistant, he ensured the thrill and safety of adrenaline
-                    seekers, helping them take the leap at Norway's highest jump spots.
+                    Whether you're here for adventure, history, or nature, Rjukan has something for everyone.
+                    For more details on accommodations, activities, and events, visit the official tourism website:
+                    <a href="https://www.visitrjukan.com/" target="_blank" rel="noopener noreferrer">
+                        <i>Visit Rjukan</i>
+                    </a>.
                 </p>
             </div>
+
             <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" aria-label="Close Rjukan information modal">
+                    <i class="bi bi-x-circle"></i> Close
+                </button>
             </div>
         </div>
     </div>
 </div>
 
+                <!-- Modal for More Info on Heavy Water Adventures & Peti -->
+                <div class="modal fade" id="aboutPetiModal" tabindex="-1" aria-labelledby="aboutPetiLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <span class="close-modal" data-bs-dismiss="modal">&times;</span>
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="aboutPetiLabel">More About Heavy Water Adventures & Peti
+                                </h5>
+                            </div>
+                            <div class="modal-body">
+                                <h4>About Heavy Water Adventures</h4>
+                                <p>
+                                    Heavy Water Adventures was founded to provide the ultimate base for adventure
+                                    seekers. Whether you're here for extreme sports or to explore the breathtaking
+                                    landscapes,
+                                    our lodges offer the perfect place to rest and recharge.
+                                </p>
+                                <ul>
+                                    <li>Fully equipped lodges with a sauna and drying room.</li>
+                                    <li>Close to Rjukan's best climbing and hiking spots.</li>
+                                    <li>Perfect for groups, adventurers, and outdoor enthusiasts.</li>
+                                </ul>
 
+                                <h4>Meet Peti - The Man Behind The Adventure</h4>
+                                <p>
+                                    Peti has spent years mastering extreme outdoor sports. His journey started with ice
+                                    climbing, where he conquered some of Norway's most challenging ice walls. He later
+                                    led
+                                    guided kayak tours through Norway's fjords, sharing his love for adventure with
+                                    fellow explorers.
+                                </p>
+                                <p>
+                                    As a bungee jumping assistant, he ensured the thrill and safety of adrenaline
+                                    seekers, helping them take the leap at Norway's highest jump spots.
+                                </p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
+                <!-- Ice Climbing Modal -->
+                <div class="modal fade" id="iceClimbingModal" tabindex="-1" aria-labelledby="iceClimbingLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <span class="close-modal" data-bs-dismiss="modal">&times;</span>
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="iceClimbingLabel"><i class="bi bi-snow"></i> Ice Climbing in
+                                    Rjukan</h5>
+                            </div>
+                            <div class="modal-body">
+                                <p>
+                                    Rjukan is renowned as one of the premier ice climbing destinations globally,
+                                    boasting over 190 frozen waterfalls during its long and stable winter season.
+                                    Climbers of all levels can find suitable challenges, with many icefalls easily
+                                    accessible.
+                                </p>
+                                <p>
+                                    For guided tours and more information, visit the official tourism page: <a
+                                        href="https://en.visitrjukan.com/things-to-do/winter-activities/ice-climbing"
+                                        target="_blank" rel="noopener noreferrer"><i>Visit Rjukan - Ice
+                                            Climbing</i></a>.
+                                </p>
+                                <p>
+                                    Additionally, the Norrøna Ice Festival is an annual event in Rjukan, offering unique
+                                    ice climbing experiences, ski touring on Gaustatoppen, speed climbing competitions,
+                                    product testing, and presentations. Both beginners and experienced climbers are
+                                    welcome.
+                                </p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Skiing Modal -->
+                <div class="modal fade" id="skiingModal" tabindex="-1" aria-labelledby="skiingLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <span class="close-modal" data-bs-dismiss="modal">&times;</span>
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="skiingLabel"><i class="bi bi-skiing"></i> Skiing at Gausta
+                                    Skisenter</h5>
+                            </div>
+                            <div class="modal-body">
+                                <p>
+                                    Gausta Skisenter is a family-friendly and snow-sure ski resort near Gaustatoppen,
+                                    featuring 13 lifts, 37 slopes, children's areas, a snow park, and a ski school. The
+                                    resort offers a variety of slopes suitable for all skill levels, ensuring an
+                                    enjoyable experience for everyone.
+                                </p>
+                                <p>
+                                    For more information, including lift passes, equipment rentals, and accommodation
+                                    options, visit the official Gausta website: <a
+                                        href="https://www.gausta.com/en-US/gausta-skisenter" target="_blank"
+                                        rel="noopener noreferrer"><i>Gausta Skisenter</i></a>.
+                                </p>
+                                <p>
+                                    Additionally, Gaustablikk Fjellresort offers a range of activities and dining
+                                    options to complement your skiing experience.
+                                </p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hiking Modal -->
+                <div class="modal fade" id="hikingModal" tabindex="-1" aria-labelledby="hikingLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <span class="close-modal" data-bs-dismiss="modal">&times;</span>
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="hikingLabel"><i class="bi bi-tree"></i> Hiking to
+                                    Gaustatoppen</h5>
+                            </div>
+                            <div class="modal-body">
+                                <p>
+                                    Gaustatoppen is one of Norway's most iconic hiking destinations, offering a
+                                    spectacular 360° view that stretches across one-sixth of the country. The hike is
+                                    rewarding, with a funicular available for those who prefer an easier ascent.
+                                </p>
+                                <p>
+                                    For detailed hiking routes and visitor information, visit the official tourism page:
+                                    <a href="https://www.visitnorway.com/places-to-go/eastern-norway/telemark/gaustatoppen/"
+                                        target="_blank" rel="noopener noreferrer"><i>Visit Norway -
+                                            Gaustatoppen</i></a>.
+                                </p>
+                                <p>
+                                    Additionally, the Gaustabanen funicular provides a unique way to reach the summit,
+                                    offering panoramic views during the journey. More information is available here: <a
+                                        href="https://www.gaustabanen.no/" target="_blank"
+                                        rel="noopener noreferrer"><i>Gaustabanen</i></a>.
+                                </p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bungee Jumping Modal -->
+                <div class="modal fade" id="bungeeModal" tabindex="-1" aria-labelledby="bungeeLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <span class="close-modal" data-bs-dismiss="modal">&times;</span>
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="bungeeLabel"><i class="bi bi-exclamation-triangle"></i>
+                                    Bungee Jumping at Vemork Bridge</h5>
+                            </div>
+                            <div class="modal-body">
+                                <p>
+                                    Experience the ultimate adrenaline rush at Vemork Bridge, one of Norway's highest
+                                    bungee jumping spots. The jump offers a thrilling free fall over breathtaking
+                                    scenery, making it a must-try for adventure enthusiasts.
+                                </p>
+                                <p>
+                                    For more details, including booking information and safety guidelines, visit the
+                                    official tourism page: <a
+                                        href="https://en.visitrjukan.com/things-to-do/norways-toughest-bungee-jump-p509623"
+                                        target="_blank" rel="noopener noreferrer"><i>Visit Rjukan - Bungee
+                                            Jumping</i></a>.
+                                </p>
+                                <p>
+                                    Please ensure you meet all safety requirements and consider any health precautions
+                                    before participating in this activity.
+                                </p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
             </div> <!-- Closing about-page -->
         </div>
 
-                        <!-- Footer -->
-                        <footer class="bg-dark text-white text-center py-4">
-                            <div class="container">
-                                <div class="row">
-                                    <!-- Contact Info -->
-                                    <div class="col-md-4 mb-3">
-                                        <h5>Contact Us</h5>
-                                        <p>Email: <a href="mailto:info@heavywateradventures.com"
-                                                class="text-white">info@heavywateradventures.com</a></p>
-                                        <p>Phone: <a href="tel:+4712345678" class="text-white">+47 123 456 78</a></p>
-                                    </div>
-        
-                                    <!-- Navigation Links -->
-                                    <div class="col-md-4 mb-3">
-                                        <h5>Quick Links</h5>
-                                        <ul class="list-unstyled">
-                                            <li><a href="index.html" class="text-white">Home</a></li>
-                                            <li><a href="about.html" class="text-white">About Us</a></li>
-                                            <li><a href="gallery.html" class="text-white">Gallery</a></li>
-                                            <li><a href="booking.html" class="text-white">Stay With Us</a></li>
-                                        </ul>
-                                    </div>
-        
-                                    <!-- Social Media Links -->
-                                    <div class="col-md-4 mb-3">
-                                        <h5>Follow Us</h5>
-                                        <a href="https://www.facebook.com/profile.php?id=100063650139284" target="_blank"
-                                            class="text-white me-3">
-                                            <i class="bi bi-facebook" style="font-size: 1.5rem;"></i>
-                                        </a>
-                                        <a href="#" class="text-white">
-                                            <i class="bi bi-instagram" style="font-size: 1.5rem;"></i>
-                                        </a>
-                                    </div>
-                                </div>
-        
-                                <hr class="bg-light">
-        
-                                <p class="mb-0">&copy; 2025 Heavy Water Adventures | <a href="privacy.html"
-                                        class="text-white" target="_blank">Privacy
-                                        Policy</a></p>
-                            </div>
-                        </footer>
+        <!-- Footer -->
+        <footer class="bg-dark text-white text-center py-4">
+            <div class="container">
+                <div class="row">
+                    <!-- Contact Information -->
+                    <div class="col-md-4 mb-3">
+                        <h5>Contact Us</h5>
+                        <address>
+                            <p>Email:
+                                <a href="mailto:info@heavywateradventures.com" class="text-white"
+                                    aria-label="Send an email to Heavy Water Adventures">
+                                    info@heavywateradventures.com
+                                </a>
+                            </p>
+                            <p>Phone:
+                                <a href="tel:+4712345678" class="text-white"
+                                    aria-label="Call Heavy Water Adventures at +47 123 456 78">
+                                    +47 123 456 78
+                                </a>
+                            </p>
+                        </address>
+                    </div>
+
+                    <!-- Quick Links -->
+                    <nav class="col-md-4 mb-3" aria-label="Quick Navigation">
+                        <h5>Quick Links</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="index.html" class="text-white">Home</a></li>
+                            <li><a href="about.html" class="text-white">About Us</a></li>
+                            <li><a href="gallery.html" class="text-white">Gallery</a></li>
+                            <li><a href="booking.html" class="text-white">Book Your Stay</a></li>
+                        </ul>
+                    </nav>
+
+                    <!-- Social Media -->
+                    <div class="col-md-4 mb-3">
+                        <h5>Follow Us</h5>
+                        <a href="https://www.facebook.com/profile.php?id=100063650139284" target="_blank"
+                            rel="noopener noreferrer" class="text-white me-3"
+                            aria-label="Follow Heavy Water Adventures on Facebook">
+                            <i class="bi bi-facebook" style="font-size: 1.5rem;"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <hr class="bg-light">
+
+                <p class="mb-0">&copy; 2025 Heavy Water Adventures |
+                    <a href="privacy.html" class="text-white" target="_blank" aria-label="Read our Privacy Policy">
+                        Privacy Policy
+                    </a>
+                </p>
+
+                <!-- Manage Cookies Button -->
+                <button id="modifyCookies" class="btn btn-warning mt-3">Manage Cookie Settings</button>
+            </div>
+        </footer>
+
+    </div> <!-- End main-container -->
+
+    <!-- BACK TO TOP BUTTON -->
+    <button id="backToTop" class="back-to-top" onclick="scrollToTop()" aria-label="Scroll back to top">&#8679;</button>
+
+    <!-- COOKIE BANNER -->
+    <div id="cookieBanner" class="cookie-banner">
+        <p>This website uses cookies to enhance your experience. You can choose which cookies to allow.</p>
+        <button id="acceptAllCookies">Accept All</button>
+        <button id="rejectCookies">Reject Non-Essential</button>
+        <button id="customizeCookies">Customize</button>
+    </div>
+
+    <!-- COOKIE SETTINGS MODAL -->
+    <div id="cookieModal" class="cookie-modal hidden" role="dialog" aria-labelledby="cookieModalTitle">
+        <button id="closeCookieModal" class="close-modal" aria-label="Close cookie settings">&times;</button>
+        <h2 id="cookieModalTitle">Cookie Preferences</h2>
+        <p>Select which types of cookies you accept:</p>
+        <label>
+            <input type="checkbox" id="necessaryCookies" disabled checked> Necessary (always enabled)
+        </label>
+        <label>
+            <input type="checkbox" id="analyticsCookies"> Analytics
+        </label>
+        <label>
+            <input type="checkbox" id="marketingCookies"> Marketing
+        </label>
+        <br>
+        <button id="saveCookiePreferences">Save Preferences</button>
+    </div>
+
+    <!-- QUESTION BUTTON -->
+    <a href="booking.html#contact-form" id="questionButton" class="question-button"
+        aria-label="Ask a question about booking">
+        <i class="bi bi-chat-dots"></i>
+    </a>
+
+    <!-- BOOKING BUTTON -->
+    <a href="booking.html" id="bookingButton" class="booking-button" aria-label="Proceed to booking page">
+        <i class="bi bi-calendar-check"></i>
+    </a>
 
 
-        <!-- BACK TO TOP BUTTON -->
-        <button id="backToTop" class="back-to-top" onclick="scrollToTop()">&#8679;</button>
+    <!-- Bootstrap Bundle (PopperJS included) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 
-        <!-- COOKIE BANNER -->
-        <div id="cookieBanner" class="cookie-banner">
-            <p>This website uses cookies to ensure you get the best experience. <a href="#">Learn more</a></p>
-            <button id="acceptCookiesBtn">Accept</button>
-        </div>
-
-        <!-- BOOKING BUTTON -->
-        <a href="booking.html" id="bookingButton" class="booking-button">
-            <i class="bi bi-calendar-check"></i>
-        </a>
-
-
-        <!-- Bootstrap Bundle (PopperJS included) -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-
-        <!-- Saját scriptek -->
-        <script src="script/index_extra.js"></script>
-        <script src="script/nav.js"></script>
-        <script src="script/about_page_modal.js"></script>
+    <!-- Saját scriptek -->
+    <script src="script/cookie-banner.js"></script>
+    <script src="script/nav.js"></script>
+    <script src="script/about_page_modal.js"></script>
+    <script src="script/back-to-up-button.js"></script>
 
 
 </body>

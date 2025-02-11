@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 
-    document.querySelectorAll(".btn-close").forEach(closeButton => {
+    document.querySelectorAll(".btn-close, .close-modal").forEach(closeButton => {
         closeButton.addEventListener("click", function () {
             const modalElement = this.closest(".modal");
             const modalInstance = bootstrap.Modal.getInstance(modalElement);

@@ -7,6 +7,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
     let modalGallery = [];
     let modalIndex = 0;
+    let touchStartX = 0;
+    let touchEndX = 0;
 
     document.querySelectorAll(".gallery-img").forEach(img => {
         img.addEventListener("click", function () {
@@ -24,16 +26,42 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     modalNext.addEventListener("click", function () {
-        modalIndex = (modalIndex + 1) % modalGallery.length; 
-        updateModal();
+        nextImage();
     });
 
     modalPrev.addEventListener("click", function () {
-        modalIndex = (modalIndex - 1 + modalGallery.length) % modalGallery.length; 
-        updateModal();
+        prevImage();
     });
 
     closeModal.addEventListener("click", function () {
         modal.style.display = "none";
     });
+
+    modal.addEventListener("touchstart", function (event) {
+        touchStartX = event.touches[0].clientX;
+    });
+
+    modal.addEventListener("touchend", function (event) {
+        touchEndX = event.changedTouches[0].clientX;
+        handleSwipe();
+    });
+
+    function handleSwipe() {
+        const swipeThreshold = 50;
+        if (touchStartX - touchEndX > swipeThreshold) {
+            nextImage();
+        } else if (touchEndX - touchStartX > swipeThreshold) {
+            prevImage(); 
+        }
+    }
+
+    function nextImage() {
+        modalIndex = (modalIndex + 1) % modalGallery.length;
+        updateModal();
+    }
+
+    function prevImage() {
+        modalIndex = (modalIndex - 1 + modalGallery.length) % modalGallery.length;
+        updateModal();
+    }
 });
