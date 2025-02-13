@@ -1,0 +1,17 @@
+.env
+
+vendor/
+
+*.log
+*.cache
+*.tmp
+
+php_errors.log
+email_error.log
+session.save_path/
+
+.vscode/
+.idea/
+nbproject/
+.DS_Store
+Thumbs.db
